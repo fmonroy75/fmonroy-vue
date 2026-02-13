@@ -2,7 +2,7 @@
     <section id="experience" class="py-5 py-lg-6 bg-light">
       <div class="container">
         <!-- Header -->
-        <div class="text-center mb-5">
+        <div class="text-center mb-5" data-aos="fade-up">
           <span class="badge bg-accent text-white px-4 py-2 rounded-pill mb-3">
             <i class="bi bi-briefcase me-2"></i>TRAYECTORIA
           </span>
@@ -21,7 +21,7 @@
                  class="row g-0 mb-5 timeline-item animate-fade-up"
                  :style="{ animationDelay: `${index * 0.1}s` }">
               
-              <!-- Línea decorativa (solo desktop) -->
+              <!-- Línea decorativa y año -->
               <div class="col-md-4 text-md-end pe-md-5">
                 <div class="sticky-top" style="top: 100px;">
                   <div class="badge bg-gradient-accent text-white px-4 py-2 rounded-pill mb-3">
@@ -43,14 +43,15 @@
                     <ul class="list-unstyled mb-4">
                       <li v-for="highlight in exp.highlights" :key="highlight"
                           class="mb-3 d-flex">
-                        <span class="text-accent me-3">▹</span>
-                        <span>{{ highlight }}</span>
+                        <span class="text-accent me-3 fs-5">▹</span>
+                        <span class="text-primary-800">{{ highlight }}</span>
                       </li>
                     </ul>
                     
-                    <div class="d-flex flex-wrap gap-2 mt-4 pt-3 border-top">
+                    <div class="d-flex flex-wrap gap-2 mt-4 pt-4 border-top">
                       <span v-for="tech in exp.technologies" :key="tech"
                             class="badge bg-light text-primary border px-3 py-2 rounded-pill">
+                        <i :class="getTechIcon(tech)" class="me-1"></i>
                         {{ tech }}
                       </span>
                     </div>
@@ -96,6 +97,23 @@
       return yearB - yearA
     })
   })
+  
+  const getTechIcon = (tech) => {
+    const icons = {
+      'Murex': 'bi-database',
+      'SQL': 'bi-database',
+      'Java': 'bi-code-square',
+      'Excel': 'bi-file-spreadsheet',
+      'Oracle': 'bi-database',
+      'VB': 'bi-code-square',
+      'PeopleSoft': 'bi-building',
+      'SAP': 'bi-building',
+      'ASP': 'bi-code',
+      'JavaScript': 'bi-braces',
+      'Python': 'bi-code-slash'
+    }
+    return icons[tech] || 'bi-gear'
+  }
   </script>
   
   <style scoped>
@@ -113,11 +131,13 @@
   
   .card-premium {
     transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
   }
   
   .card-premium:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.1) !important;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1) !important;
   }
   
   .border-top {
@@ -125,7 +145,14 @@
   }
   
   .py-lg-6 {
-    padding-top: 6rem !important;
-    padding-bottom: 6rem !important;
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+  }
+  
+  @media (min-width: 992px) {
+    .py-lg-6 {
+      padding-top: 6rem !important;
+      padding-bottom: 6rem !important;
+    }
   }
   </style>
