@@ -9,7 +9,7 @@ export const personalInfo = {
   shortBio: 'Profesional con 15+ años en gestión y liderazgo de equipos, especializado en desarrollo web, gestión de proyectos tecnológicos y análisis de datos.',
   fullBio: 'Ingeniero de Gestión y Sistemas con experiencia en evaluación, gestión, administración e implementación de proyectos tecnológicos y operativos, supervisión de servicios externos, auditoría de procesos, mejora de procesos, análisis de datos, administración de proveedores, administración de presupuesto. Liderazgo, capacidad analítica y orientación al logro. Excelentes habilidades de comunicación, resolución de problemas y gestión de relaciones.',
   location: 'Santiago de Chile',
-  email: 'fmonroy75@outlook.com',
+  email: 'francisco.monroy@gmail.com',
   linkedin: 'https://www.linkedin.com/in/fmonroy75/',
   github: 'https://github.com/fmonroy75',
   cvFile: '/cv-francisco-monroy.pdf',
@@ -266,13 +266,13 @@ export const programmingLanguages = [
     experience: '7+ años',
     description: 'Laravel, Wordpress, APIs'
   },
-  { 
+  /*{ 
     name: 'C#', 
     level: 70, 
     icon: 'csharp.png',
     experience: '5+ años',
     description: '.NET, ASP.NET, Entity Framework'
-  },
+  },*/
   { 
     name: 'SQL', 
     level: 95, 
@@ -311,20 +311,20 @@ export const frameworks = [
     experience: '4+ años',
     description: 'Vue 3, Composition API, Vuex/Pinia'
   },
-  { 
+  /*{ 
     name: 'React', 
     level: 75, 
     icon: 'react.png',
     experience: '3+ años',
     description: 'Hooks, Context, Redux'
-  },
-  { 
+  },*/
+  /*{ 
     name: 'Node.js', 
     level: 80, 
     icon: 'nodejs.png',
     experience: '5+ años',
     description: 'Express, APIs REST, microservicios'
-  },
+  },*/
   { 
     name: 'Bootstrap', 
     level: 95, 
@@ -332,13 +332,13 @@ export const frameworks = [
     experience: '8+ años',
     description: 'Responsive, customización, temas'
   },
-  { 
+  /*{ 
     name: 'Tailwind', 
     level: 80, 
     icon: 'tailwind.png',
     experience: '2+ años',
     description: 'Utility-first, componentes'
-  },
+  },*/
   { 
     name: 'Django', 
     level: 70, 
@@ -377,14 +377,55 @@ export const tools = [
     experience: '5+ años',
     description: 'APIs, testing, colecciones'
   },
-  { 
+ /* { 
     name: 'Figma', 
     level: 65, 
     icon: 'figma.png',
     experience: '2+ años',
     description: 'Diseño, prototipado, colaboración'
+  }*/
+]
+
+export const BD = [
+  { 
+    name: 'Oracle', 
+    level: 90, 
+    icon: 'oracle.png',
+    experience: '8+ años',
+    description: 'Creacion de bases de datos, consultas vistas'
+  },
+  { 
+    name: 'SQL Server', 
+    level: 90, 
+    icon: 'sql.png',
+    experience: '8+ años',
+    description: 'Creacion de bases de datos, consultas vistas'
+  },
+  { 
+    name: 'MySQL', 
+    level: 90, 
+    icon: 'MySQL.png',
+    experience: '8+ años',
+    description: 'Creacion de bases de datos, consultas vistas'
+  },
+  { 
+    name: 'FireStore', 
+    level: 85, 
+    icon: 'firebase.png',
+    experience: '2+ años',
+    description: 'APIs, testing, colecciones'
+  },
+  { 
+    name: 'PostgreSQL', 
+    level: 85, 
+    icon: 'postgresql.png',
+    experience: '2+ años',
+    description: 'APIs, testing, colecciones'
   }
 ]
+
+
+
 
 export const skills = [
   { name: 'Full Stack Development', level: 90, icon: 'bi-code-slash', color: 'primary' },
@@ -404,24 +445,25 @@ export const languages = [
 export const projects = [
   {
     id: 1,
-    title: 'Sistema de Gestión Inmobiliaria',
+    title: 'Landing Page Vincent Alizé',
     category: 'web',
-    categoryLabel: 'Web Development',
-    description: 'Proyecto final de gestión inmobiliaria, permite mostrar propiedades y agregar cuando se requiera.',
-    fullDescription: 'Sistema completo para la gestión de propiedades inmobiliarias. Incluye módulos de administración de propiedades, clientes, contratos de arriendo, reportes y dashboard interactivo desarrollado con Vue 3 y Node.js.',
-    image: 'https://via.placeholder.com/600x400/2C3E50/FFFFFF?text=Gestión+Inmobiliaria',
-    technologies: ['Vue 3', 'Node.js', 'Express', 'MongoDB', 'Bootstrap'],
+    categoryLabel: 'Web Design',
+    description: 'Landing Page para músico Vincent Alizé - Portafolio artístico.',
+    fullDescription: 'Sitio web portfolio para músico profesional. Galería de videos, discografía, fechas de conciertos y tienda integrada con pasarela de pagos.',
+    image: '../src/assets/images/portfolio/vincentalize.jpg',
+    technologies: ['Vue 3', 'Vuetify', 'Firebase', 'Vue Router'],
     features: [
-      'CRUD completo de propiedades',
-      'Búsqueda y filtros avanzados',
-      'Dashboard con métricas',
-      'Autenticación de usuarios',
-      'API RESTful'
+      'Galería multimedia',
+      'Reproductor de música',
+      'Blog de noticias',
+      'Calendario de eventos',
+      'E-commerce básico'
     ],
-    demoUrl: 'https://github.com/fmonroy75/proyecto-inmobiliario',
-    codeUrl: 'https://github.com/fmonroy75/proyecto-inmobiliario',
+    demoUrl: 'https://github.com/fmonroy75/vincent-alize',
+    codeUrl: 'https://github.com/fmonroy75/vincent-alize',
     featured: true,
-    year: 2024
+    year: 2026
+     
   },
   {
     id: 2,
@@ -430,7 +472,7 @@ export const projects = [
     categoryLabel: 'Python / Data Science',
     description: 'Proyecto test en Python, simulador de corredor de bolsa con análisis predictivo.',
     fullDescription: 'Aplicación de simulación de inversiones en tiempo real que permite a usuarios practicar estrategias de trading con datos históricos del mercado chileno. Incluye visualización de datos y análisis de riesgo.',
-    image: 'https://via.placeholder.com/600x400/E94560/FFFFFF?text=Simulador+Bolsa',
+    image: '../src/assets/images/portfolio/python-bootcamp.webp',
     technologies: ['Python', 'Pandas', 'NumPy', 'Streamlit', 'Matplotlib'],
     features: [
       'Simulación de compra/venta de acciones',
@@ -442,7 +484,7 @@ export const projects = [
     demoUrl: 'https://github.com/fmonroy75/simulador-bolsa',
     codeUrl: 'https://github.com/fmonroy75/simulador-bolsa',
     featured: true,
-    year: 2024
+    year: 2025
   },
   {
     id: 3,
@@ -451,7 +493,7 @@ export const projects = [
     categoryLabel: 'Web Development',
     description: 'Juegos para practicar oralmente idiomas, supervisados o sin supervisión.',
     fullDescription: 'Plataforma interactiva de juegos educativos para el aprendizaje de idiomas. Incluye reconocimiento de voz, evaluación automática y modo multijugador en tiempo real.',
-    image: 'https://via.placeholder.com/600x400/3498DB/FFFFFF?text=Juegos+Idiomas',
+    image: '../src/assets/images/portfolio/languagelife.jpg',
     technologies: ['Vue 3', 'Web Speech API', 'Node.js', 'Socket.io', 'PostgreSQL'],
     features: [
       'Reconocimiento de voz',
@@ -463,7 +505,7 @@ export const projects = [
     demoUrl: 'https://github.com/fmonroy75/juegos-idiomas',
     codeUrl: 'https://github.com/fmonroy75/juegos-idiomas',
     featured: true,
-    year: 2023
+    year: 2026
   },
   {
     id: 4,
@@ -472,7 +514,7 @@ export const projects = [
     categoryLabel: 'Web Design',
     description: 'Landing Page para fitness Terapias Funcionales - Chikung.',
     fullDescription: 'Landing page profesional para centro de terapias funcionales. Diseño responsive con animaciones suaves, formulario de contacto integrado y optimización SEO.',
-    image: 'https://via.placeholder.com/600x400/1ABC9C/FFFFFF?text=Chikung+Wellness',
+    image: '../src/assets/images/portfolio/tf.jpg',
     technologies: ['HTML5', 'CSS3', 'JavaScript', 'GSAP', 'Bootstrap'],
     features: [
       'Diseño 100% responsive',
@@ -484,28 +526,29 @@ export const projects = [
     demoUrl: 'https://github.com/fmonroy75/chikung-landing',
     codeUrl: 'https://github.com/fmonroy75/chikung-landing',
     featured: false,
-    year: 2023
+    year: 2026
   },
   {
     id: 5,
-    title: 'Landing Page Vincent Alizé',
+    title: 'Sistema de Gestión Inmobiliaria',
     category: 'web',
-    categoryLabel: 'Web Design',
-    description: 'Landing Page para músico Vincent Alizé - Portafolio artístico.',
-    fullDescription: 'Sitio web portfolio para músico profesional. Galería de videos, discografía, fechas de conciertos y tienda integrada con pasarela de pagos.',
-    image: 'https://via.placeholder.com/600x400/9B59B6/FFFFFF?text=Vincent+Alizé',
-    technologies: ['Vue 3', 'Vuetify', 'Firebase', 'Vue Router'],
+    categoryLabel: 'Web Development',
+    description: 'Proyecto final de gestión inmobiliaria, permite mostrar propiedades y agregar cuando se requiera.',
+    fullDescription: 'Sistema completo para la gestión de propiedades inmobiliarias. Incluye módulos de administración de propiedades, clientes, contratos de arriendo, reportes y dashboard interactivo desarrollado con Vue 3 y Node.js.',
+    image: '../src/assets/images/portfolio/python-bootcamp.webp',
+    technologies: ['Vue 3', 'Node.js', 'Express', 'MongoDB', 'Bootstrap'],
     features: [
-      'Galería multimedia',
-      'Reproductor de música',
-      'Blog de noticias',
-      'Calendario de eventos',
-      'E-commerce básico'
+      'CRUD completo de propiedades',
+      'Búsqueda y filtros avanzados',
+      'Dashboard con métricas',
+      'Autenticación de usuarios',
+      'API RESTful'
     ],
-    demoUrl: 'https://github.com/fmonroy75/vincent-alize',
-    codeUrl: 'https://github.com/fmonroy75/vincent-alize',
+    demoUrl: 'https://github.com/fmonroy75/proyecto-inmobiliario',
+    codeUrl: 'https://github.com/fmonroy75/proyecto-inmobiliario',
     featured: false,
-    year: 2022
+    year: 2025
+ 
   },
   {
     id: 6,
@@ -514,7 +557,7 @@ export const projects = [
     categoryLabel: 'Python',
     description: 'Sistema de administración de arriendo de bodegas industriales.',
     fullDescription: 'Sistema de gestión para arriendo de bodegas industriales. Control de inventario, facturación automática, reportes financieros y dashboard administrativo.',
-    image: 'https://via.placeholder.com/600x400/F39C12/FFFFFF?text=Admin+Bodegas',
+    image: '../src/assets/images/portfolio/python-bootcamp.webp',
     technologies: ['Python', 'Django', 'SQLite', 'Bootstrap', 'Chart.js'],
     features: [
       'Gestión de clientes y contratos',
@@ -526,7 +569,7 @@ export const projects = [
     demoUrl: 'https://github.com/fmonroy75/admin-bodegas',
     codeUrl: 'https://github.com/fmonroy75/admin-bodegas',
     featured: false,
-    year: 2024
+    year: 2025
   }
 ]
 

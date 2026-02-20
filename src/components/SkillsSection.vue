@@ -256,7 +256,7 @@
             <div class="card-body p-4 p-lg-5">
               <div class="d-flex align-items-center mb-4">
                 <div class="bg-gradient-accent rounded-circle p-3 me-3">
-                  <i class="bi bi-database text-white fs-3"></i>
+                  <i class="bi bi-code-slash text-white fs-3"></i>
                 </div>
                 <h3 class="h3 fw-bold mb-0 text-primary">Lenguajes de programación</h3>
               </div>
@@ -264,7 +264,7 @@
               <div class="d-flex flex-wrap gap-2">
                 <span v-for="lang in programmingLanguages" :key="lang.name"
                       class="badge bg-white border border-accent text-accent px-4 py-2 rounded-pill">
-                  <i class="bi bi-database me-1"></i>
+                  <i class="bi bi-code-slash me-1"></i>
                   {{ lang.name }}
                 </span>
 
@@ -280,7 +280,7 @@
             <div class="card-body p-4 p-lg-5">
               <div class="d-flex align-items-center mb-4">
                 <div class="bg-gradient-accent rounded-circle p-3 me-3">
-                  <i class="bi bi-database text-white fs-3"></i>
+                  <i class="bi bi-boxes text-white fs-3"></i>
                 </div>
                 <h3 class="h3 fw-bold mb-0 text-primary">Herramientas de programación</h3>
               </div>
@@ -288,7 +288,7 @@
               <div class="d-flex flex-wrap gap-2">
                 <span v-for="fw in frameworks" :key="fw.name"
                       class="badge bg-white border border-accent text-accent px-4 py-2 rounded-pill">
-                  <i class="bi bi-database me-1"></i>
+                  <i class="bi bi-boxes me-1"></i>
                   {{ fw.name }}
                 </span>
 
@@ -304,7 +304,7 @@
             <div class="card-body p-4 p-lg-5">
               <div class="d-flex align-items-center mb-4">
                 <div class="bg-gradient-accent rounded-circle p-3 me-3">
-                  <i class="bi bi-database text-white fs-3"></i>
+                  <i class="bi bi-tools text-white fs-3"></i>
                 </div>
                 <h3 class="h3 fw-bold mb-0 text-primary">Herramientas y tecnologías</h3>
               </div>
@@ -312,7 +312,7 @@
               <div class="d-flex flex-wrap gap-2">
                 <span v-for="tool in tools" :key="tool.name"
                       class="badge bg-white border border-accent text-accent px-4 py-2 rounded-pill">
-                  <i class="bi bi-database me-1"></i>
+                  <i class="bi bi-tools me-1"></i>
                   {{ tool.name }}
                 </span>
 
@@ -363,6 +363,11 @@ const specializations = [
   {
     title: 'Liderazgo Técnico',
     description: 'Mentoría, revisión de código y definición de arquitecturas.',
+    icon: 'bi-people'
+  },
+  {
+    title: 'Análisis',
+    description: 'Toma de requerimientos, Análisis de datos',
     icon: 'bi-people'
   }
 ]

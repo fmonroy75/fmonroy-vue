@@ -2,9 +2,10 @@
 import { ref, watch, computed } from 'vue'
 
 const THEME_KEY = 'portfolio-theme-preference'
+const isDark = ref(false)
 
 export const useThemeStore = () => {
-  const isDark = ref(false)
+  //const isDark = ref(false)
   
   // Inicializar tema desde localStorage o preferencia del sistema
   const initTheme = () => {

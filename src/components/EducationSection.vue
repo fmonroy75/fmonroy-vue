@@ -70,7 +70,7 @@
                     <p class="text-secondary small mb-0">
                       <i class="bi bi-geo-alt me-1"></i>{{ course.location }}
                     </p>
-                    <span class="badge bg-accent bg-opacity-10 text-accent px-3 py-1 rounded-pill mt-2">
+                    <span class="badge bg-accent bg-opacity-10  text-white px-3 py-1 rounded-pill mt-2">
                       {{ course.category }}
                     </span>
                   </div>
