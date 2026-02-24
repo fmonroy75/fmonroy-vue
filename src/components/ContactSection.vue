@@ -22,7 +22,7 @@
           <!-- Botones de acción -->
           <div class="d-flex flex-column flex-sm-row justify-content-center gap-3 mb-5">
             <!-- WhatsApp - Principal -->
-            <a href="https://wa.me/56912345678?text=Hola%20Francisco,%20vi%20tu%20portafolio%20y%20me%20gustaría%20conversar%20contigo" 
+            <a :href=whatsappUrl
                target="_blank"
                class="btn btn-success btn-lg px-5 py-3 rounded-pill d-flex align-items-center justify-content-center gap-3">
               <i class="bi bi-whatsapp fs-3"></i>
@@ -30,33 +30,33 @@
             </a>
             
             <!-- Email - Secundario -->
-            <a href="mailto:fmonroy75@outlook.com" 
+            <a :href="'mailto:' + personalInfo.email"
                class="btn btn-outline-light btn-lg px-5 py-3 rounded-pill d-flex align-items-center justify-content-center gap-3">
               <i class="bi bi-envelope fs-3"></i>
-              <span class="fw-semibold">fmonroy75@outlook.com</span>
+              <span class="fw-semibold">{{ personalInfo.email }}</span>
             </a>
           </div>
           
           <!-- Redes sociales -->
           <div class="d-flex justify-content-center gap-3">
-            <a href="https://linkedin.com/in/fmonroy75" 
+            <a :href="personalInfo.linkedin"
                target="_blank"
                class="social-icon"
                title="LinkedIn">
               <i class="bi bi-linkedin"></i>
             </a>
-            <a href="https://github.com/fmonroy75" 
+            <a :href="personalInfo.github"
                target="_blank"
                class="social-icon"
                title="GitHub">
               <i class="bi bi-github"></i>
             </a>
-            <a href="mailto:fmonroy75@outlook.com" 
+            <a :href="'mailto:' + personalInfo.email" 
                class="social-icon"
                title="Email">
               <i class="bi bi-envelope-fill"></i>
             </a>
-            <a href="https://wa.me/56912345678" 
+            <a :href=whatsappUrl
                target="_blank"
                class="social-icon"
                title="WhatsApp">
@@ -70,11 +70,13 @@
 </template>
 
 <script setup>
-// Número de WhatsApp - Cámbialo por el tuyo
-const whatsappNumber = '56912345678' // Ejemplo: 56912345678 (Chile)
-const whatsappMessage = 'Hola%20Francisco,%20vi%20tu%20portafolio%20y%20me%20gustaría%20conversar%20contigo'
+import { personalInfo } from '../data/portfolioData'
 
-const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`
+// Número de WhatsApp
+//const whatsappNumber = '56982307788' // Ejemplo: 56912345678 (Chile)
+//const whatsappMessage = 'Hola%20Francisco,%20vi%20tu%20portafolio%20y%20me%20gustaría%20conversar%20contigo'
+
+const whatsappUrl = `https://wa.me/${personalInfo.whatsappNumber}?text=${personalInfo.whatsappMessage}`
 </script>
 
 <style scoped>
@@ -172,3 +174,4 @@ const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`
   }
 }
 </style>
+  

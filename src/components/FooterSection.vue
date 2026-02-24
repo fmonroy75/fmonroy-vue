@@ -7,7 +7,7 @@
               Francisco <span class="text-accent">Monroy</span> H.
             </h4>
             <p class="text-white opacity-75 mb-4">
-              Full Stack Developer • Ingeniero de Sistemas • Gestión de Proyectos
+              {{personalInfo.title}}
             </p>
             <div class="d-flex gap-2">
               <a :href="personalInfo.linkedin" target="_blank" 

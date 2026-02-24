@@ -139,10 +139,10 @@
             </div>
             
             <div class="modal-footer border-0 p-4">
-              <a :href="selectedProject?.codeUrl" target="_blank" 
+              <a v-if="selectedProject?.webUrl" :href="selectedProject.webUrl" target="_blank" 
                  class="btn btn-accent px-4 py-2 rounded-pill">
                 <i class="bi bi-github me-2"></i>
-                Ver código fuente
+                Ver Proyecto
               </a>
               <button type="button" class="btn btn-outline-secondary px-4 py-2 rounded-pill" 
                       @click="showModal = false">
@@ -165,8 +165,8 @@
   
   const filters = [
     { label: 'Todos los proyectos', value: 'all' },
-    { label: 'Web Development', value: 'web' },
-    { label: 'Python / Data', value: 'python' }
+    { label: 'Desarrollo Web', value: 'web' },
+    { label: 'Python', value: 'python' }
   ]
   
   const filteredProjects = computed(() => {

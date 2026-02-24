@@ -12,6 +12,8 @@ export const personalInfo = {
   email: 'francisco.monroy@gmail.com',
   linkedin: 'https://www.linkedin.com/in/fmonroy75/',
   github: 'https://github.com/fmonroy75',
+  whatsappNumber: '56982307788',
+  whatsappMessage:'Hola%20Francisco,%20vi%20tu%20portafolio%20y%20me%20gustaría%20conversar%20contigo',
   //descarga
   cvFile: '/files/FMonroy_CV_ESP_v2.pdf',
   stats: [
@@ -26,7 +28,7 @@ export const experience = [
   {
     id: 1,
     company: 'Banco Estado · Banco Itaú',
-    position: 'Full Stack Developer',
+    position: 'Murex Analyst',
     period: '2022 – 2023',
     location: 'Santiago, Chile',
     color: 'primary',
@@ -35,12 +37,12 @@ export const experience = [
       'Controles de calidad previos a entregas productivas',
       'Desarrollo de execution scripts y batch extensions'
     ],
-    technologies: ['Murex', 'SQL', 'Java', 'Batch Scripts']
+    technologies: ['Murex', 'SQL','Batch Scripts']
   },
   {
     id: 2,
     company: 'Sonda',
-    position: 'Analista de Datos',
+    position: 'Consultor de operaciones',
     period: '2021 - 2022',
     location: 'Santiago, Chile',
     color: 'secondary',
@@ -54,31 +56,33 @@ export const experience = [
   {
     id: 3,
     company: 'AFP Habitat',
-    position: 'Coordinador de Control de Calidad',
+    position: 'Analista de datos',
     period: '2019 - 2021',
     location: 'Santiago, Chile',
     color: 'success',
     highlights: [
       'Realizar control de calidad basado en coherencia y cohesión de datos',
       'Ejecutar scripts de corrección y mapeo',
-      'Coordinar control de calidad en todos los proyectos',
-      'Análisis para migración de información'
+      'Encontrar inconsistencias de datos',
+      'Análisis de datos para migración de información'
     ],
-    technologies: ['Excel', 'SQL', 'Data Quality']
+    technologies: ['Excel', 'SQL']
   },
   {
     id: 4,
     company: 'Holding CGE',
-    position: 'Jefe de Proyectos | Líder de Desarrollo',
+    position: 'Jefe de Proyectos | Líder de Desarrollo | Desarrollador',
     period: '2007 - 2017',
     location: 'Santiago, Chile',
     color: 'warning',
     highlights: [
       'Implementar sistema de higiene y seguridad',
-      'Aprender ERP PeopleSoft y liderar departamento en 6 meses',
+      'Aprender ERP PeopleSoft y liderar proyectos en 6 meses',
       'Jefe de proyectos con empresas externas',
       'Liderar desarrollo y mantenimiento de software',
-      'Control de calidad del producto final'
+      'Realizar control de calidad de producto final antes de la entrega',
+      'Gestión con clientes (internos y externos) para la toma de requerimientos',
+      'Soporte nivel 2 y 3 de aplicaciones web'
     ],
     technologies: ['PeopleSoft', 'SAP', 'VB', 'ASP', 'JavaScript', 'Oracle']
   },
@@ -92,9 +96,9 @@ export const experience = [
     highlights: [
       'Líder técnico de empresas externas',
       'Control de calidad de proyectos',
-      'Desarrollo web'
+      'Desarrollador de aplicaciones Web'
     ],
-    technologies: ['ASP', 'JavaScript', 'Oracle']
+    technologies: ['ASP','Java', 'JavaScript', 'Oracle']
   },
   {
     id: 6,
@@ -106,30 +110,31 @@ export const experience = [
     highlights: [
       'Análisis y Programación'
     ],
-    technologies: ['ASP', 'Oracle']
+    technologies: ['ASP', 'Javascript','Oracle']
   },
   {
     id: 7,
     company: 'IN MOTION INGENIEROS S.A.',
-    position: 'Analista Programador',
+    position: 'Analista de Sistemas',
     period: '2003',
     location: 'Santiago, Chile',
     color: 'secondary',
     highlights: [
-      'Proyecto "Sistema Multidimensional de Información"'
+      'Participa en proyecto "Sistema Multidimensional de Información”'
     ],
     technologies: ['Oracle']
   },
   {
     id: 8,
     company: 'IN-NOVA SOFTWARE / Freeway / Ferrera y Herquiñigo',
-    position: 'Jefe de Proyectos',
+    position: 'Jefe de Proyectos | Desarrollador',
     period: '1999 - 2002',
     location: 'Santiago, Chile',
     color: 'success',
     highlights: [
       'Control de calidad de proyectos',
-      'Jefatura de proyectos'
+      'Jefatura de proyectos con equipos multidisciplinarios',
+      'Desarrollador web'
     ],
     technologies: ['ASP', 'VB', 'PHP 5', 'MySQL', 'SQL', 'Oracle']
   },
@@ -148,13 +153,13 @@ export const experience = [
   {
     id: 10,
     company: 'Manufacturas Textiles Pichara',
-    position: 'Coordinador de Calidad',
+    position: 'Analista Programador',
     period: '1997 - 1998',
     location: 'Santiago, Chile',
     color: 'info',
     highlights: [
       'Coordinación y control de calidad',
-      'Análisis del Sistema de Control de Producción'
+      'Análisis y programación de sistema de Control de Producción'
     ],
     technologies: ['VB', 'SQL']
   }
@@ -186,7 +191,7 @@ export const courses = [
     institution: 'Inforcap - Talento Digital',
     location: 'Santiago de Chile',
     year: 2024,
-    category: 'Desarrollo'
+    category: 'Desarrollo Web'
   },
   {
     id: 2,
@@ -235,37 +240,37 @@ export const programmingLanguages = [
   { 
     name: 'Python', 
     level: 85, 
-    icon: 'python.png',
-    experience: '8+ años',
+    icon: 'python-logo.webp',
+    experience: '1+ años',
     description: 'Desarrollo backend, data science, scripting'
   },
   { 
     name: 'JavaScript', 
     level: 90, 
-    icon: 'javascript.png',
+    icon: 'JavaScript-logo.png',
     experience: '10+ años',
-    description: 'ES6+, DOM, async, frameworks'
+    description: 'ES6+, DOM, async, frameworks, Desarrollo web'
   },
   { 
     name: 'TypeScript', 
     level: 75, 
     icon: 'typescript.png',
-    experience: '3+ años',
+    experience: '1+ años',
     description: 'Tipado estático, interfaces, generics'
   },
   { 
     name: 'Java', 
     level: 80, 
     icon: 'java.png',
-    experience: '8+ años',
-    description: 'Spring, JPA, microservicios'
+    experience: '2+ años',
+    description: 'Desarrollo, microservicios'
   },
   { 
     name: 'PHP', 
     level: 75, 
-    icon: 'php.png',
+    icon: 'php-logo.webp',
     experience: '7+ años',
-    description: 'Laravel, Wordpress, APIs'
+    description: 'Desarrollo web , Wordpress, Moodle, APIs'
   },
   /*{ 
     name: 'C#', 
@@ -277,23 +282,23 @@ export const programmingLanguages = [
   { 
     name: 'SQL', 
     level: 95, 
-    icon: 'sql.png',
+    icon: 'sql-database-logo.jpg',
     experience: '12+ años',
     description: 'Oracle, MySQL, PostgreSQL, optimización'
   },
   { 
     name: 'HTML5', 
     level: 95, 
-    icon: 'html.png',
+    icon: 'html5-logo.png',
     experience: '15+ años',
-    description: 'Semántica, accesibilidad, SEO'
+    description: 'Semántica, accesibilidad, SEO, Desarrollo Web'
   },
   { 
     name: 'CSS3', 
     level: 90, 
-    icon: 'css.png',
-    experience: '15+ años',
-    description: 'Flexbox, Grid, animaciones, responsive'
+    icon: 'CSS3_Logo.png',
+    experience: '10+ años',
+    description: 'Desarrollo Web'
   },
   { 
     name: 'VB / ASP', 
@@ -309,8 +314,8 @@ export const frameworks = [
     name: 'Vue.js', 
     level: 85, 
     icon: 'vue.png',
-    experience: '4+ años',
-    description: 'Vue 3, Composition API, Vuex/Pinia'
+    experience: '1+ años',
+    description: 'Vue 3,  Vuex/Pinia, Vuetify'
   },
   /*{ 
     name: 'React', 
@@ -329,9 +334,9 @@ export const frameworks = [
   { 
     name: 'Bootstrap', 
     level: 95, 
-    icon: 'bootstrap.png',
-    experience: '8+ años',
-    description: 'Responsive, customización, temas'
+    icon: 'bootstrap-logo.jpg',
+    experience: '3+ años',
+    description: 'Responsive, customización, Desarrollo Web'
   },
   /*{ 
     name: 'Tailwind', 
@@ -343,9 +348,9 @@ export const frameworks = [
   { 
     name: 'Django', 
     level: 70, 
-    icon: 'django.png',
+    icon: 'django-logo.webp',
     experience: '2+ años',
-    description: 'ORM, admin, templates'
+    description: 'ORM, admin, Desarrollo Web'
   }
 ]
 
@@ -353,30 +358,51 @@ export const tools = [
   { 
     name: 'GitHub', 
     level: 90, 
-    icon: 'git.png',
+    icon: 'GitHub-Logo.png',
     experience: '8+ años',
-    description: 'Git flow, branching, merging'
+    description: 'Git , branching, merging'
   },
-  { 
+  /*{ 
     name: 'Docker', 
     level: 70, 
     icon: 'docker.png',
     experience: '3+ años',
     description: 'Contenedores, compose, swarm'
-  },
+  },*/
   { 
     name: 'VS Code', 
     level: 95, 
     icon: 'vscode.png',
-    experience: '6+ años',
-    description: 'Extensiones, debugging, snippets'
+    experience: '5+ años',
+    description: 'Extensiones, debugging, snippets, Programación'
   },
   { 
     name: 'Postman', 
     level: 85, 
     icon: 'postman.png',
+    experience: '1+ años',
+    description: 'Testing'
+  },
+  { 
+    name: 'Wix', 
+    level: 85, 
+    icon: 'wix.png',
     experience: '5+ años',
-    description: 'APIs, testing, colecciones'
+    description: 'Desarrollo Web'
+  },
+  { 
+    name: 'Wordpress', 
+    level: 85, 
+    icon: 'wordpress.webp',
+    experience: '5+ años',
+    description: 'Desarrollo Web'
+  },
+  { 
+    name: 'Moodle', 
+    level: 85, 
+    icon: 'moodle.jpg',
+    experience: '5+ años',
+    description: 'Desarrollo Web, desarrollo de cursos'
   },
  /* { 
     name: 'Figma', 
@@ -393,36 +419,53 @@ export const BD = [
     level: 90, 
     icon: 'oracle.png',
     experience: '8+ años',
-    description: 'Creacion de bases de datos, consultas vistas'
+    description: 'Creacion de bases de datos, consultas, vistas'
   },
   { 
     name: 'SQL Server', 
     level: 90, 
-    icon: 'sql.png',
+    icon: 'sql-database-logo.jpg',
     experience: '8+ años',
-    description: 'Creacion de bases de datos, consultas vistas'
+    description: 'Creación de bases de datos, consultas, vistas, cursores'
   },
   { 
     name: 'MySQL', 
     level: 90, 
-    icon: 'MySQL.png',
+    icon: 'mysql-logo.png',
     experience: '8+ años',
-    description: 'Creacion de bases de datos, consultas vistas'
+    description: 'Creación de bases de datos, consultas vistas'
   },
   { 
     name: 'FireStore', 
     level: 85, 
-    icon: 'firebase.png',
+    icon: 'firebase.webp',
     experience: '2+ años',
-    description: 'APIs, testing, colecciones'
+    description: 'Colecciones'
   },
   { 
     name: 'PostgreSQL', 
     level: 85, 
-    icon: 'postgresql.png',
-    experience: '2+ años',
-    description: 'APIs, testing, colecciones'
-  }
+    icon: 'logo-postgresql.png',
+    experience: '1+ años',
+    description: 'Creación de bases de datos'
+  },
+]
+
+  export const ERP = [
+    { 
+      name: 'Peoplesoft', 
+      level: 90, 
+      icon: 'peoplesoft-logo.png',
+      experience: '5+ años',
+      description: 'Desarrollo y Mantención'
+    },
+    { 
+      name: 'Murex', 
+      level: 90, 
+      icon: 'murex-logo.webp',
+      experience: '1+ años',
+      description: 'Script, Batch of script'
+    },
 ]
 
 
@@ -434,6 +477,7 @@ export const skills = [
   { name: 'SQL & Bases de Datos', level: 95, icon: 'bi-database', color: 'success' },
   { name: 'Gestión de Proyectos', level: 92, icon: 'bi-briefcase', color: 'warning' },
   { name: 'Análisis de Datos', level: 88, icon: 'bi-bar-chart', color: 'secondary' },
+  { name: 'Desarrollo Web', level: 95, icon: 'bi-bar-chart', color: 'primary' },
   { name: 'ERP (SAP, PeopleSoft)', level: 80, icon: 'bi-building', color: 'danger' }
 ]
 
@@ -448,20 +492,18 @@ export const projects = [
     id: 1,
     title: 'Landing Page Vincent Alizé',
     category: 'web',
-    categoryLabel: 'Web Design',
+    categoryLabel: 'Desarrollo Web',
     description: 'Landing Page para músico Vincent Alizé - Portafolio artístico.',
-    fullDescription: 'Sitio web portfolio para músico profesional. Galería de videos, discografía, fechas de conciertos y tienda integrada con pasarela de pagos.',
+    fullDescription: 'Sitio web portfolio para músico profesional. Galería de videos, discografía',
     image: '../src/assets/images/portfolio/vincentalize.jpg',
-    technologies: ['Vue 3', 'Vuetify', 'Firebase', 'Vue Router'],
+    technologies: ['Bootstrap', 'Javascript', 'jQuery'],
     features: [
       'Galería multimedia',
       'Reproductor de música',
-      'Blog de noticias',
-      'Calendario de eventos',
-      'E-commerce básico'
     ],
-    demoUrl: 'https://github.com/fmonroy75/vincent-alize',
-    codeUrl: 'https://github.com/fmonroy75/vincent-alize',
+    demoUrl: '',
+    codeUrl: '',
+    webUrl:'https://fmonroy75.github.io/vincentalize/',
     featured: true,
     year: 2026
      
@@ -469,21 +511,22 @@ export const projects = [
   {
     id: 2,
     title: 'LanguageArtLife',
-    category: 'python',
-    categoryLabel: 'Webdesign',
-    description: 'Web LanguageArtLife.',
-    fullDescription: 'Aplicación de simulación de inversiones en tiempo real que permite a usuarios practicar estrategias de trading con datos históricos del mercado chileno. Incluye visualización de datos y análisis de riesgo.',
+    category: 'web',
+    categoryLabel: 'Desarrollo Web',
+    description: 'Webpage para una academia de idiomas con galería de arte.',
+    fullDescription: 'Webpage para una academia de idiomas, galería de arte, exposiciones y eventos',
     image: '../src/assets/images/portfolio/languageartlife.jpg',
-    technologies: ['Python', 'Pandas', 'NumPy', 'Streamlit', 'Matplotlib'],
-    features: [
-      'Simulación de compra/venta de acciones',
-      'Análisis de riesgo',
-      'Visualización de datos históricos',
-      'Portafolio de inversiones',
-      'Alertas de mercado'
+    technologies: ['Bootstrap','Javascript','PHP','MySQL','Javascript','Json','Jquery'],
+    features:[ 
+      'Blog de noticias y eventos',
+      'Galería de Obras',
+      'Responsive',
+      'Optimización SEO',
+      'Multiidioma'
     ],
-    demoUrl: 'https://github.com/fmonroy75/simulador-bolsa',
-    codeUrl: 'https://github.com/fmonroy75/simulador-bolsa',
+    demoUrl: '',
+    codeUrl: '',
+    webUrl:'https://www.languageartlife.com',
     featured: true,
     year: 2025
   },
@@ -491,62 +534,62 @@ export const projects = [
     id: 3,
     title: 'Juegos para Práctica de Idiomas',
     category: 'web',
-    categoryLabel: 'Web Development',
-    description: 'Juegos para practicar oralmente idiomas, supervisados o sin supervisión.',
-    fullDescription: 'Plataforma interactiva de juegos educativos para el aprendizaje de idiomas. Incluye reconocimiento de voz, evaluación automática y modo multijugador en tiempo real.',
+    categoryLabel: 'Desarrollo Web',
+    description: 'Juegos para practicar oralmente, idiomas, supervisados o sin supervisar con algun profesor.',
+    fullDescription: 'Plataforma interactiva de juegos educativos para la práctica oral de idiomas.',
     image: '../src/assets/images/portfolio/languagelife.jpg',
-    technologies: ['Vue 3', 'Web Speech API', 'Node.js', 'Socket.io', 'PostgreSQL'],
+    technologies: ['PHP', 'MySQL'],
     features: [
-      'Reconocimiento de voz',
-      'Ejercicios de pronunciación',
-      'Juegos interactivos',
-      'Seguimiento de progreso',
-      'Salas multijugador'
-    ],
-    demoUrl: 'https://github.com/fmonroy75/juegos-idiomas',
-    codeUrl: 'https://github.com/fmonroy75/juegos-idiomas',
+      'PHP',
+      'Javascript',
+      'Multiidioma',
+      'Opciones al azar'
+        ],
+    demoUrl: '',
+    codeUrl: '',
+    webUrl: 'https://www.languageartlife.com/juego/oral-practice.php',
     featured: true,
     year: 2026
   },
   {
     id: 4,
-    title: 'Landing Page Chikung Wellness',
+    title: 'Landing Page Chikung',
     category: 'web',
-    categoryLabel: 'Web Design',
+    categoryLabel: 'Desarrollo Web',
     description: 'Landing Page para fitness Terapias Funcionales - Chikung.',
-    fullDescription: 'Landing page profesional para centro de terapias funcionales. Diseño responsive con animaciones suaves, formulario de contacto integrado y optimización SEO.',
+    fullDescription: 'Landing page profesional para centro de terapias funcionales. Diseño responsive con animaciones suaves y optimización SEO.',
     image: '../src/assets/images/portfolio/tf.jpg',
-    technologies: ['HTML5', 'CSS3', 'JavaScript', 'GSAP', 'Bootstrap'],
+    technologies: ['HTML5', 'CSS3', 'JavaScript', 'BEM', 'Tailwind'],
     features: [
       'Diseño 100% responsive',
-      'Animaciones GSAP',
-      'Formulario de contacto',
+      'Animaciones',
       'Optimización SEO',
       'Integración con Google Maps'
     ],
-    demoUrl: 'https://github.com/fmonroy75/chikung-landing',
-    codeUrl: 'https://github.com/fmonroy75/chikung-landing',
+    demoUrl: '',
+    codeUrl: '',
+    webUrl:'https://fmonroy75.github.io/ChiKung/',
     featured: false,
     year: 2026
   },
   {
     id: 5,
     title: 'Sistema de Gestión Inmobiliaria',
-    category: 'web',
-    categoryLabel: 'Web Development',
+    category: 'python',
+    categoryLabel: 'Python',
     description: 'Proyecto final de gestión inmobiliaria, permite mostrar propiedades y agregar cuando se requiera.',
-    fullDescription: 'Sistema completo para la gestión de propiedades inmobiliarias. Incluye módulos de administración de propiedades, clientes, contratos de arriendo, reportes y dashboard interactivo desarrollado con Vue 3 y Node.js.',
+    fullDescription: 'Sistema completo para la gestión de propiedades inmobiliarias. Incluye módulos de administración de propiedades, clientes, reportes y dashboard interactivo desarrollado Python y Django.',
     image: '../src/assets/images/portfolio/python-bootcamp.webp',
-    technologies: ['Vue 3', 'Node.js', 'Express', 'MongoDB', 'Bootstrap'],
+    technologies: ['Python', 'Django', 'PostgreSQL', 'Bootstrap'],
     features: [
       'CRUD completo de propiedades',
       'Búsqueda y filtros avanzados',
-      'Dashboard con métricas',
-      'Autenticación de usuarios',
-      'API RESTful'
+      'Dashboard',
+      'Autenticación de usuarios'
     ],
-    demoUrl: 'https://github.com/fmonroy75/proyecto-inmobiliario',
-    codeUrl: 'https://github.com/fmonroy75/proyecto-inmobiliario',
+    demoUrl: '',
+    codeUrl: '',
+    webUrl:'',
     featured: false,
     year: 2025
  
@@ -556,19 +599,18 @@ export const projects = [
     title: 'Administración de Arriendo de Bodegas',
     category: 'python',
     categoryLabel: 'Python',
-    description: 'Sistema de administración de arriendo de bodegas industriales.',
-    fullDescription: 'Sistema de gestión para arriendo de bodegas industriales. Control de inventario, facturación automática, reportes financieros y dashboard administrativo.',
+    description: 'Sistema de administración de arriendo de bodegas.',
+    fullDescription: 'Sistema de gestión para arriendo de bodegas. Control de inventario,reportes financieros y dashboard administrativo.',
     image: '../src/assets/images/portfolio/python-bootcamp.webp',
-    technologies: ['Python', 'Django', 'SQLite', 'Bootstrap', 'Chart.js'],
+    technologies: ['Python', 'Django', 'SQLite', 'Bootstrap'],
     features: [
-      'Gestión de clientes y contratos',
-      'Control de pagos',
+      'Gestión de clientes ',
       'Reportes de ocupación',
-      'Facturación automática',
       'Dashboard administrativo'
     ],
-    demoUrl: 'https://github.com/fmonroy75/admin-bodegas',
-    codeUrl: 'https://github.com/fmonroy75/admin-bodegas',
+    demoUrl: '',
+    codeUrl: '',
+    webUrl: '',
     featured: false,
     year: 2025
   },
@@ -576,20 +618,18 @@ export const projects = [
     id: 7,
     title: 'Simulador de Corredor de Bolsa',
     category: 'python',
-    categoryLabel: 'Python / Data Science',
-    description: 'Proyecto test en Python, simulador de corredor de bolsa con análisis predictivo.',
-    fullDescription: 'Aplicación de simulación de inversiones en tiempo real que permite a usuarios practicar estrategias de trading con datos históricos del mercado chileno. Incluye visualización de datos y análisis de riesgo.',
+    categoryLabel: 'Python',
+    description: 'Proyecto test en Python, simulador de corredor de bolsa.',
+    fullDescription: 'Aplicación de simulación de inversiones en tiempo real que permite a usuarios compra y venta de acciones.',
     image: '../src/assets/images/portfolio/python-bootcamp.webp',
-    technologies: ['Python', 'Pandas', 'NumPy', 'Streamlit', 'Matplotlib'],
+    technologies: ['Python', 'Bootstrap', 'Django'],
     features: [
       'Simulación de compra/venta de acciones',
-      'Análisis de riesgo',
-      'Visualización de datos históricos',
-      'Portafolio de inversiones',
-      'Alertas de mercado'
-    ],
-    demoUrl: 'https://github.com/fmonroy75/simulador-bolsa',
-    codeUrl: 'https://github.com/fmonroy75/simulador-bolsa',
+      'Portafolio de inversiones'
+        ],
+    demoUrl: '',
+    codeUrl: '',
+    webUrl: '',
     featured: true,
     year: 2025
   }
