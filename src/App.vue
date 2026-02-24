@@ -3,9 +3,18 @@
     <!-- Navbar - VERSIÓN CORREGIDA -->
     <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
       <div class="container">
-        <a class="navbar-brand fw-bold fs-3" href="#home">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+        <img :src="logoImage" 
+             alt="Francisco Monroy" 
+             class="rounded-circle"
+             style="height: 50px; width: auto; object-fit: cover;">
+        <span class="fw-bold fs-5 d-none d-sm-inline">
+          F. <span class="text-accent">Monroy</span>
+        </span>
+      </a>
+        <!--<a class="navbar-brand fw-bold fs-3" href="#home">
           F<span class="text-accent">M</span>
-        </a>
+        </a>-->
         
         <div class="d-flex align-items-center">
           <!-- Theme Toggle -->
@@ -76,8 +85,14 @@ import ContactSection from './components/ContactSection.vue'
 import FooterSection from './components/FooterSection.vue'
 import ThemeToggle from './components/ThemeToggle.vue'
 
+
+
 const showBackToTop = ref(false)
 const activeSection = ref('home')
+
+// Importar la imagen desde assets
+import logoImage from './assets/images/sigla.png'
+
 
 const checkScroll = () => {
   showBackToTop.value = window.scrollY > 300

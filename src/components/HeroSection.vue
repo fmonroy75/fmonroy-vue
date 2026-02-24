@@ -3,7 +3,10 @@
       <!-- Fondo animado -->
       <div class="position-absolute w-100 h-100">
         <div class="position-absolute w-100 h-100" 
-             :style="{ background: 'url(\'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYtMi42ODYgNi02cy0yLjY4Ni02LTYtNi02IDIuNjg2LTYgNiAyLjY4NiA2IDYgNnoiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wNSkiLz48L2c+PC9zdmc+\')', opacity: 0.2 }">
+        :style="{ 
+       backgroundImage: 'url(' + fondoImage + ')',
+       opacity: 0.2 
+     }">
         </div>
       </div>
   
@@ -40,10 +43,13 @@
                   Ver proyectos
                 </button>
                 
-                <a href="/cv-francisco-monroy.pdf" download class="btn btn-outline-light btn-lg">
-                  <i class="bi bi-download me-2"></i>
-                  CV
-                </a>
+            <!-- ✅ BOTÓN DE CV CORREGIDO -->
+            <a :href="personalInfo.cvFile" 
+               download="Francisco_Monroy_CV.pdf"
+               class="btn btn-outline-light btn-lg">
+              <i class="bi bi-download me-2"></i>
+              CV
+            </a>
               </div>
               
               <!-- Stats -->
@@ -68,7 +74,11 @@
               <div class="position-relative text-center">
                 <div class="bg-gradient-accent rounded-circle p-1 mx-auto" style="width: 350px; height: 350px;">
                   <div class="bg-white rounded-circle w-100 h-100 d-flex align-items-center justify-content-center shadow-lg">
-                    <span class="display-1 fw-bold text-primary">FM</span>
+                    <!--<span class="display-1 fw-bold text-primary">FM</span>-->
+                    <img :src="fm" 
+             alt="Francisco Monroy" 
+             class="rounded-circle"
+             style="height: 300px; width: auto; object-fit: cover;">
                   </div>
                 </div>
                 
@@ -115,7 +125,8 @@
   
   <script setup>
   import { personalInfo } from '../data/portfolioData'
-  
+  import fondoImage from '../assets/images/fondo.jpg'
+  import fm from '../assets/images/yo.png'
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId)
     if (element) {

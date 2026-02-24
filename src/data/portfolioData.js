@@ -12,7 +12,8 @@ export const personalInfo = {
   email: 'francisco.monroy@gmail.com',
   linkedin: 'https://www.linkedin.com/in/fmonroy75/',
   github: 'https://github.com/fmonroy75',
-  cvFile: '/cv-francisco-monroy.pdf',
+  //descarga
+  cvFile: '/files/FMonroy_CV_ESP_v2.pdf',
   stats: [
     { value: '15+', label: 'Años Experiencia' },
     { value: '50+', label: 'Proyectos' },
@@ -350,7 +351,7 @@ export const frameworks = [
 
 export const tools = [
   { 
-    name: 'Git', 
+    name: 'GitHub', 
     level: 90, 
     icon: 'git.png',
     experience: '8+ años',
@@ -467,12 +468,12 @@ export const projects = [
   },
   {
     id: 2,
-    title: 'Simulador de Corredor de Bolsa',
+    title: 'LanguageArtLife',
     category: 'python',
-    categoryLabel: 'Python / Data Science',
-    description: 'Proyecto test en Python, simulador de corredor de bolsa con análisis predictivo.',
+    categoryLabel: 'Webdesign',
+    description: 'Web LanguageArtLife.',
     fullDescription: 'Aplicación de simulación de inversiones en tiempo real que permite a usuarios practicar estrategias de trading con datos históricos del mercado chileno. Incluye visualización de datos y análisis de riesgo.',
-    image: '../src/assets/images/portfolio/python-bootcamp.webp',
+    image: '../src/assets/images/portfolio/languageartlife.jpg',
     technologies: ['Python', 'Pandas', 'NumPy', 'Streamlit', 'Matplotlib'],
     features: [
       'Simulación de compra/venta de acciones',
@@ -570,6 +571,27 @@ export const projects = [
     codeUrl: 'https://github.com/fmonroy75/admin-bodegas',
     featured: false,
     year: 2025
+  },
+  {
+    id: 7,
+    title: 'Simulador de Corredor de Bolsa',
+    category: 'python',
+    categoryLabel: 'Python / Data Science',
+    description: 'Proyecto test en Python, simulador de corredor de bolsa con análisis predictivo.',
+    fullDescription: 'Aplicación de simulación de inversiones en tiempo real que permite a usuarios practicar estrategias de trading con datos históricos del mercado chileno. Incluye visualización de datos y análisis de riesgo.',
+    image: '../src/assets/images/portfolio/python-bootcamp.webp',
+    technologies: ['Python', 'Pandas', 'NumPy', 'Streamlit', 'Matplotlib'],
+    features: [
+      'Simulación de compra/venta de acciones',
+      'Análisis de riesgo',
+      'Visualización de datos históricos',
+      'Portafolio de inversiones',
+      'Alertas de mercado'
+    ],
+    demoUrl: 'https://github.com/fmonroy75/simulador-bolsa',
+    codeUrl: 'https://github.com/fmonroy75/simulador-bolsa',
+    featured: true,
+    year: 2025
   }
 ]
 
@@ -581,3 +603,4 @@ export const menuItems = [
   { name: 'Proyectos', path: '#portfolio' },
   { name: 'Contacto', path: '#contact' }
 ]
+

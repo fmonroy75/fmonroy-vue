@@ -61,7 +61,8 @@
               </li>
               <li class="mb-3 d-flex align-items-center">
                 <i class="bi bi-file-text me-3 text-accent"></i>
-                <a :href="personalInfo.cvFile" download 
+                <a :href="personalInfo.cvFile" 
+                download="Francisco_Monroy_CV.pdf" 
                    class="text-white opacity-75 text-decoration-none">
                   Descargar CV
                 </a>
