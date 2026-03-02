@@ -396,35 +396,35 @@ const handleImageError = (event) => {
 
 <style scoped>
 .bg-gradient-accent {
-  background: linear-gradient(135deg, #E94560 0%, #d63a52 100%);
+  background: linear-gradient(135deg, var(--bs-accent) 0%, var(--bs-accent-hover) 100%);
 }
 
 [data-bs-theme="dark"] .bg-gradient-accent {
-  background: linear-gradient(135deg, #FF6B8B 0%, #FF8E9F 100%) !important;
+  background: linear-gradient(135deg, #2DD4BF 0%, #14B8A6 100%) !important;
 }
 
 .bg-accent {
-  background-color: #E94560 !important;
-}
+background-color: var(--bs-accent) !important;
+  }
 
 [data-bs-theme="dark"] .bg-accent {
-  background-color: #FF6B8B !important;
+  background-color: #2DD4BF !important;
 }
 
 .text-accent {
-  color: #E94560 !important;
-}
+color: var(--bs-accent) !important;
+  }
 
 [data-bs-theme="dark"] .text-accent {
-  color: #FF6B8B !important;
+  color: #2DD4BF !important;
 }
 
 .border-accent {
-  border-color: #E94560 !important;
-}
+border-color: var(--bs-accent) !important;
+  }
 
 [data-bs-theme="dark"] .border-accent {
-  border-color: #FF6B8B !important;
+  border-color: #2DD4BF !important;
 }
 
 .progress {
@@ -438,13 +438,13 @@ const handleImageError = (event) => {
 }
 
 .progress-bar {
-  background: linear-gradient(90deg, #E94560, #ff6b8b);
+  background: linear-gradient(90deg, var(--bs-accent), #14B8A6);
   border-radius: 4px;
   transition: width 1s ease;
 }
 
 [data-bs-theme="dark"] .progress-bar {
-  background: linear-gradient(90deg, #FF6B8B, #FF8E9F) !important;
+  background: linear-gradient(90deg, #2DD4BF, #14B8A6) !important;
 }
 
 .card-premium {
@@ -466,7 +466,7 @@ const handleImageError = (event) => {
 
 .skill-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 20px 30px rgba(233, 69, 96, 0.15) !important;
+  box-shadow: 0 20px 30px rgba(13, 148, 136, 0.15) !important;
 }
 
 [data-bs-theme="dark"] .skill-card:hover {

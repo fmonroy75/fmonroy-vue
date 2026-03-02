@@ -100,11 +100,11 @@
   }
   
   .text-accent {
-    color: #E94560 !important;
+    color: var(--bs-accent) !important;
   }
   
   .hover-accent:hover {
-    color: #E94560 !important;
+    color: var(--bs-accent) !important;
     transition: color 0.3s ease;
   }
   
@@ -113,10 +113,10 @@
   }
   
   .btn-outline-light:hover {
-    background: #E94560;
-    border-color: #E94560;
+    background: var(--bs-accent);
+    border-color: var(--bs-accent);
     color: white;
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(233, 69, 96, 0.3);
+    box-shadow: 0 10px 24px rgba(13, 148, 136, 0.35);
   }
   </style>

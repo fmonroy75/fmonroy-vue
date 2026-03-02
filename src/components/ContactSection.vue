@@ -89,19 +89,19 @@ const whatsappUrl = `https://wa.me/${personalInfo.whatsappNumber}?text=${persona
 }
 
 .text-accent-light {
-  color: #E94560 !important;
+  color: var(--bs-accent) !important;
 }
 
 [data-bs-theme="dark"] .text-accent-light {
-  color: #FF6B8B !important;
+  color: #2DD4BF !important;
 }
 
 .bg-accent {
-  background-color: #E94560 !important;
+  background-color: var(--bs-accent) !important;
 }
 
 [data-bs-theme="dark"] .bg-accent {
-  background-color: #FF6B8B !important;
+  background-color: #2DD4BF !important;
 }
 
 /* Botón WhatsApp */
@@ -151,13 +151,13 @@ const whatsappUrl = `https://wa.me/${personalInfo.whatsappNumber}?text=${persona
 }
 
 .social-icon:hover {
-  background: #E94560;
+  background: var(--bs-accent);
   color: white;
   transform: translateY(-3px) scale(1.1);
 }
 
 [data-bs-theme="dark"] .social-icon:hover {
-  background: #FF6B8B;
+  background: #2DD4BF;
 }
 
 /* Responsive */

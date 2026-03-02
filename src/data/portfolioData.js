@@ -185,32 +185,9 @@ export const education = [
 ]
 
 export const courses = [
+
   {
     id: 1,
-    name: 'FullStack Python',
-    institution: 'Inforcap - Talento Digital',
-    location: 'Santiago de Chile',
-    year: 2024,
-    category: 'Desarrollo Web'
-  },
-  {
-    id: 2,
-    name: 'Data Sciences con Python',
-    institution: 'Adalid - Talento Digital',
-    location: 'Santiago de Chile',
-    year: 2023,
-    category: 'Data Science'
-  },
-  {
-    id: 3,
-    name: 'SAP MM',
-    institution: 'Buffa Sistemas',
-    location: 'Buenos Aires, Argentina',
-    year: 2021,
-    category: 'ERP'
-  },
-  {
-    id: 4,
     name: 'Diplomado Sistemas de Gestión Integral (ISO 9001, 14001, 18001)',
     institution: 'Universidad del Desarrollo',
     location: 'Santiago de Chile',
@@ -218,7 +195,7 @@ export const courses = [
     category: 'Gestión'
   },
   {
-    id: 5,
+    id: 2,
     name: 'Curso de Finanzas para no especialistas',
     institution: 'Universidad Santo Tomás',
     location: 'Santiago de Chile',
@@ -226,12 +203,44 @@ export const courses = [
     category: 'Finanzas'
   },
   {
-    id: 6,
+    id: 3,
     name: 'Curso de Marketing y ventas',
     institution: 'Universidad de Chile',
     location: 'Santiago de Chile',
     year: 2017,
     category: 'Negocios'
+  },
+  {
+    id: 4,
+    name: 'SAP MM',
+    institution: 'Buffa Sistemas',
+    location: 'Buenos Aires, Argentina',
+    year: 2021,
+    category: 'ERP'
+  },
+  {
+    id: 5,
+    name: 'Data Sciences con Python',
+    institution: 'Adalid - Talento Digital',
+    location: 'Santiago de Chile',
+    year: 2023,
+    category: 'Data Science'
+  },
+  {
+    id: 6,
+    name: 'FullStack Python',
+    institution: 'Inforcap - Talento Digital',
+    location: 'Santiago de Chile',
+    year: 2024,
+    category: 'Desarrollo Web'
+  },
+  {
+    id: 7,
+    name: 'Desarrollo FrontEnd Vue',
+    institution: 'Nuevacumbre - Talento Digital',
+    location: 'Santiago de Chile',
+    year: 2026,
+    category: 'Desarrollo Web'
   }
 ]
 
@@ -488,69 +497,71 @@ export const languages = [
 ]
 
 export const projects = [
+
   {
     id: 1,
-    title: 'Landing Page Vincent Alizé',
-    category: 'web',
-    categoryLabel: 'Desarrollo Web',
-    description: 'Landing Page para músico Vincent Alizé - Portafolio artístico.',
-    fullDescription: 'Sitio web portfolio para músico profesional. Galería de videos, discografía',
-    image: '../src/assets/images/portfolio/vincentalize.jpg',
-    technologies: ['Bootstrap', 'Javascript', 'jQuery'],
+    title: 'Simulador de Corredor de Bolsa',
+    category: 'python',
+    categoryLabel: 'Python',
+    description: 'Proyecto test en Python, simulador de corredor de bolsa.',
+    fullDescription: 'Aplicación de simulación de inversiones en tiempo real que permite a usuarios compra y venta de acciones.',
+    image: '../src/assets/images/portfolio/python-bootcamp.webp',
+    technologies: ['Python', 'Bootstrap', 'Django'],
     features: [
-      'Galería multimedia',
-      'Reproductor de música',
-    ],
-    demoUrl: '',
-    codeUrl: '',
-    webUrl:'https://fmonroy75.github.io/vincentalize/',
-    featured: true,
-    year: 2026
-     
-  },
-  {
-    id: 2,
-    title: 'LanguageArtLife',
-    category: 'web',
-    categoryLabel: 'Desarrollo Web',
-    description: 'Webpage para una academia de idiomas con galería de arte.',
-    fullDescription: 'Webpage para una academia de idiomas, galería de arte, exposiciones y eventos',
-    image: '../src/assets/images/portfolio/languageartlife.jpg',
-    technologies: ['Bootstrap','Javascript','PHP','MySQL','Javascript','Json','Jquery'],
-    features:[ 
-      'Blog de noticias y eventos',
-      'Galería de Obras',
-      'Responsive',
-      'Optimización SEO',
-      'Multiidioma'
-    ],
-    demoUrl: '',
-    codeUrl: '',
-    webUrl:'https://www.languageartlife.com',
-    featured: true,
-    year: 2025
-  },
-  {
-    id: 3,
-    title: 'Juegos para Práctica de Idiomas',
-    category: 'web',
-    categoryLabel: 'Desarrollo Web',
-    description: 'Juegos para practicar oralmente, idiomas, supervisados o sin supervisar con algun profesor.',
-    fullDescription: 'Plataforma interactiva de juegos educativos para la práctica oral de idiomas.',
-    image: '../src/assets/images/portfolio/languagelife.jpg',
-    technologies: ['PHP', 'MySQL'],
-    features: [
-      'PHP',
-      'Javascript',
-      'Multiidioma',
-      'Opciones al azar'
+      'Simulación de compra/venta de acciones',
+      'Portafolio de inversiones'
         ],
     demoUrl: '',
     codeUrl: '',
-    webUrl: 'https://www.languageartlife.com/juego/oral-practice.php',
+    webUrl: '',
     featured: true,
-    year: 2026
+    year: 2025
   },
+
+  {
+    id: 2,
+    title: 'Administración de Arriendo de Bodegas',
+    category: 'python',
+    categoryLabel: 'Python',
+    description: 'Sistema de administración de arriendo de bodegas.',
+    fullDescription: 'Sistema de gestión para arriendo de bodegas. Control de inventario,reportes financieros y dashboard administrativo.',
+    image: '../src/assets/images/portfolio/python-bootcamp.webp',
+    technologies: ['Python', 'Django', 'SQLite', 'Bootstrap'],
+    features: [
+      'Gestión de clientes ',
+      'Reportes de ocupación',
+      'Dashboard administrativo'
+    ],
+    demoUrl: '',
+    codeUrl: '',
+    webUrl: '',
+    featured: false,
+    year: 2025
+  },
+
+  {
+    id: 3,
+    title: 'Sistema de Gestión Inmobiliaria',
+    category: 'python',
+    categoryLabel: 'Python',
+    description: 'Proyecto final de gestión inmobiliaria, permite mostrar propiedades y agregar cuando se requiera.',
+    fullDescription: 'Sistema completo para la gestión de propiedades inmobiliarias. Incluye módulos de administración de propiedades, clientes, reportes y dashboard interactivo desarrollado Python y Django.',
+    image: '../src/assets/images/portfolio/python-bootcamp.webp',
+    technologies: ['Python', 'Django', 'PostgreSQL', 'Bootstrap'],
+    features: [
+      'CRUD completo de propiedades',
+      'Búsqueda y filtros avanzados',
+      'Dashboard',
+      'Autenticación de usuarios'
+    ],
+    demoUrl: '',
+    codeUrl: '',
+    webUrl:'',
+    featured: false,
+    year: 2025
+ 
+  },
+
   {
     id: 4,
     title: 'Landing Page Chikung',
@@ -572,67 +583,93 @@ export const projects = [
     featured: false,
     year: 2026
   },
+
+
   {
     id: 5,
-    title: 'Sistema de Gestión Inmobiliaria',
-    category: 'python',
-    categoryLabel: 'Python',
-    description: 'Proyecto final de gestión inmobiliaria, permite mostrar propiedades y agregar cuando se requiera.',
-    fullDescription: 'Sistema completo para la gestión de propiedades inmobiliarias. Incluye módulos de administración de propiedades, clientes, reportes y dashboard interactivo desarrollado Python y Django.',
-    image: '../src/assets/images/portfolio/python-bootcamp.webp',
-    technologies: ['Python', 'Django', 'PostgreSQL', 'Bootstrap'],
-    features: [
-      'CRUD completo de propiedades',
-      'Búsqueda y filtros avanzados',
-      'Dashboard',
-      'Autenticación de usuarios'
+    title: 'LanguageArtLife',
+    category: 'web',
+    categoryLabel: 'Desarrollo Web',
+    description: 'Webpage para una academia de idiomas con galería de arte.',
+    fullDescription: 'Webpage para una academia de idiomas, galería de arte, exposiciones y eventos',
+    image: '../src/assets/images/portfolio/languageartlife.jpg',
+    technologies: ['Bootstrap','Javascript','PHP','MySQL','Javascript','Json','Jquery'],
+    features:[ 
+      'Blog de noticias y eventos',
+      'Galería de Obras',
+      'Responsive',
+      'Optimización SEO',
+      'Multiidioma'
     ],
     demoUrl: '',
     codeUrl: '',
-    webUrl:'',
-    featured: false,
-    year: 2025
- 
+    webUrl:'https://www.languageartlife.com',
+    featured: true,
+    year: 2026
   },
   {
     id: 6,
-    title: 'Administración de Arriendo de Bodegas',
-    category: 'python',
-    categoryLabel: 'Python',
-    description: 'Sistema de administración de arriendo de bodegas.',
-    fullDescription: 'Sistema de gestión para arriendo de bodegas. Control de inventario,reportes financieros y dashboard administrativo.',
-    image: '../src/assets/images/portfolio/python-bootcamp.webp',
-    technologies: ['Python', 'Django', 'SQLite', 'Bootstrap'],
+    title: 'Juegos para Práctica de Idiomas',
+    category: 'web',
+    categoryLabel: 'Desarrollo Web',
+    description: 'Juegos para practicar oralmente, idiomas, supervisados o sin supervisar con algun profesor.',
+    fullDescription: 'Plataforma interactiva de juegos educativos para la práctica oral de idiomas.',
+    image: '../src/assets/images/portfolio/languagelife.jpg',
+    technologies: ['PHP', 'MySQL'],
     features: [
-      'Gestión de clientes ',
-      'Reportes de ocupación',
-      'Dashboard administrativo'
-    ],
-    demoUrl: '',
-    codeUrl: '',
-    webUrl: '',
-    featured: false,
-    year: 2025
-  },
-  {
-    id: 7,
-    title: 'Simulador de Corredor de Bolsa',
-    category: 'python',
-    categoryLabel: 'Python',
-    description: 'Proyecto test en Python, simulador de corredor de bolsa.',
-    fullDescription: 'Aplicación de simulación de inversiones en tiempo real que permite a usuarios compra y venta de acciones.',
-    image: '../src/assets/images/portfolio/python-bootcamp.webp',
-    technologies: ['Python', 'Bootstrap', 'Django'],
-    features: [
-      'Simulación de compra/venta de acciones',
-      'Portafolio de inversiones'
+      'PHP',
+      'Javascript',
+      'Multiidioma',
+      'Opciones al azar'
         ],
     demoUrl: '',
     codeUrl: '',
-    webUrl: '',
+    webUrl: 'https://www.languageartlife.com/juego/oral-practice.php',
     featured: true,
-    year: 2025
+    year: 2026
+  },
+
+  {
+    id: 7,
+    title: 'Landing Page Vincent Alizé',
+    category: 'web',
+    categoryLabel: 'Desarrollo Web',
+    description: 'Landing Page para músico Vincent Alizé - Portafolio artístico.',
+    fullDescription: 'Sitio web portfolio para músico profesional. Galería de videos, discografía',
+    image: '../src/assets/images/portfolio/vincentalize.jpg',
+    technologies: ['Bootstrap', 'Javascript', 'jQuery'],
+    features: [
+      'Galería multimedia',
+      'Reproductor de música',
+    ],
+    demoUrl: '',
+    codeUrl: '',
+    webUrl:'https://fmonroy75.github.io/vincentalize/',
+    featured: true,
+    year: 2026
+     
+  },
+  {
+    id: 8,
+    title: 'Landing Page Moviltechnology',
+    category: 'web',
+    categoryLabel: 'Desarrollo Web',
+    description: 'Landing Page tienda de respuestos y accesorios para celulares',
+    fullDescription: 'Sitio web de tienda de repuestos y accesorios para celulares, cada card con acción de llamada a whatsapp',
+    image: '../src/assets/images/portfolio/moviltechnology.jpg',
+    technologies: ['Bootstrap', 'Javascript', 'Vue'],
+    features: [
+      'Cards con llamada a la acción',
+      'Landing Page',
+    ],
+    demoUrl: '',
+    codeUrl: '',
+    webUrl:'https://moviltechnology.ingeniumbright.com/',
+    featured: true,
+    year: 2026
+     
   }
+
 ]
 
 export const menuItems = [

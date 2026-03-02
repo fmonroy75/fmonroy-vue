@@ -158,7 +158,7 @@ html {
 }
 
 .navbar-brand {
-  color: #2C3E50 !important;
+  color: var(--bs-primary) !important;
 }
 
 [data-bs-theme="dark"] .navbar-brand {
@@ -166,7 +166,7 @@ html {
 }
 
 .nav-link {
-  color: #2C3E50 !important;
+  color: var(--bs-primary) !important;
   transition: color 0.3s ease;
   position: relative;
 }
@@ -177,12 +177,12 @@ html {
 
 .nav-link:hover,
 .nav-link.active {
-  color: #E94560 !important;
+  color: var(--bs-accent) !important;
 }
 
 [data-bs-theme="dark"] .nav-link:hover,
 [data-bs-theme="dark"] .nav-link.active {
-  color: #FF6B8B !important;
+  color: #2DD4BF !important;
 }
 
 .nav-link::after {
@@ -192,13 +192,13 @@ html {
   left: 50%;
   width: 0;
   height: 2px;
-  background: #E94560;
+  background: var(--bs-accent);
   transition: all 0.3s ease;
   transform: translateX(-50%);
 }
 
 [data-bs-theme="dark"] .nav-link::after {
-  background: #FF6B8B;
+  background: #2DD4BF;
 }
 
 .nav-link:hover::after,
@@ -220,7 +220,7 @@ html {
 }
 
 .btn-accent {
-  background: linear-gradient(135deg, #E94560 0%, #d63a52 100%);
+  background: linear-gradient(135deg, var(--bs-accent) 0%, var(--bs-accent-hover) 100%);
   border: none;
   color: white;
   transition: all 0.3s ease;
@@ -228,20 +228,20 @@ html {
 
 .btn-accent:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(233, 69, 96, 0.3);
+  box-shadow: 0 10px 24px rgba(13, 148, 136, 0.35);
   color: white;
 }
 
 [data-bs-theme="dark"] .btn-accent {
-  background: linear-gradient(135deg, #FF6B8B 0%, #FF8E9F 100%);
+  background: linear-gradient(135deg, #2DD4BF 0%, #14B8A6 100%);
 }
 
 .text-accent {
-  color: #E94560 !important;
+  color: var(--bs-accent) !important;
 }
 
 [data-bs-theme="dark"] .text-accent {
-  color: #FF6B8B !important;
+  color: #2DD4BF !important;
 }
 
 .back-to-top {

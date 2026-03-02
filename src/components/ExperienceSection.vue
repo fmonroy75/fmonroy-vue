@@ -118,15 +118,15 @@
   
   <style scoped>
   .bg-gradient-accent {
-    background: linear-gradient(135deg, #E94560 0%, #d63a52 100%);
+    background: linear-gradient(135deg, var(--bs-accent) 0%, var(--bs-accent-hover) 100%);
   }
   
   .bg-accent {
-    background-color: #E94560 !important;
+    background-color: var(--bs-accent) !important;
   }
   
   .text-accent {
-    color: #E94560 !important;
+    color: var(--bs-accent) !important;
   }
   
   .card-premium {

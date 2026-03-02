@@ -170,8 +170,12 @@
   ]
   
   const filteredProjects = computed(() => {
-    if (activeFilter.value === 'all') return projects
-    return projects.filter(p => p.category === activeFilter.value)
+    //if (activeFilter.value === 'all') return projects
+    let filtered = activeFilter.value === 'all' 
+    ? projects 
+    : projects.filter(p => p.category === activeFilter.value)
+    //return projects.filter(p => p.category === activeFilter.value)
+    return filtered.sort((a, b) => b.id - a.id)
   })
   
   const openProjectModal = (project) => {
@@ -182,25 +186,25 @@
   
   <style scoped>
   .btn-accent {
-    background: linear-gradient(135deg, #E94560 0%, #d63a52 100%);
+    background: linear-gradient(135deg, var(--bs-accent) 0%, var(--bs-accent-hover) 100%);
     border: none;
     color: white;
   }
   
   .btn-accent:hover {
-    background: linear-gradient(135deg, #d63a52 0%, #c23048 100%);
+    background: linear-gradient(135deg, var(--bs-accent-hover) 0%, #0F766E 100%);
     transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(233, 69, 96, 0.3);
+    box-shadow: 0 10px 24px rgba(13, 148, 136, 0.35);
     color: white;
   }
   
   .btn-outline-accent {
-    border: 2px solid #E94560;
-    color: #E94560;
+    border: 2px solid var(--bs-accent);
+    color: var(--bs-accent);
   }
   
   .btn-outline-accent:hover {
-    background: #E94560;
+    background: var(--bs-accent);
     color: white;
   }
   
@@ -242,10 +246,10 @@
   }
   
   .text-accent {
-    color: #E94560 !important;
+    color: var(--bs-accent) !important;
   }
   
   .bg-accent {
-    background-color: #E94560 !important;
+    background-color: var(--bs-accent) !important;
   }
   </style>

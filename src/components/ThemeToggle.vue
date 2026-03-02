@@ -33,7 +33,8 @@ const toggleTheme = () => {
   themeStore.toggleTheme()
 }
 
-const isDark = computed(() => themeStore.isDark)
+// Leer .value para que Vue trackee el ref y el icono cambie al hacer toggle
+const isDark = computed(() => themeStore.isDark?.value ?? false)
 const themeText = computed(() => isDark.value ? 'Modo claro' : 'Modo oscuro')
 </script>
 
@@ -42,7 +43,7 @@ const themeText = computed(() => isDark.value ? 'Modo claro' : 'Modo oscuro')
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  border: 2px solid #e94560;
+  border: 2px solid var(--bs-accent);
   background: white;
   cursor: pointer;
   position: relative;
@@ -56,7 +57,7 @@ const themeText = computed(() => isDark.value ? 'Modo claro' : 'Modo oscuro')
 
 [data-bs-theme="dark"] .theme-toggle-btn {
   background: #1e293b;
-  border-color: #ff6b8b;
+  border-color: #2DD4BF;
 }
 
 .icon-wrapper {
@@ -71,7 +72,7 @@ const themeText = computed(() => isDark.value ? 'Modo claro' : 'Modo oscuro')
 /* Sol */
 .sun-icon {
   font-size: 28px;
-  color: #f39c12;
+  color: #0D9488;
   animation: pulse 2s ease-in-out infinite;
 }
 
@@ -92,7 +93,7 @@ const themeText = computed(() => isDark.value ? 'Modo claro' : 'Modo oscuro')
   left: 50%;
   width: 100%;
   height: 100%;
-  border: 2px solid #f39c12;
+  border: 2px solid var(--bs-accent);
   border-radius: 50%;
   transform: translate(-50%, -50%);
   animation: sunRays 2s linear infinite;
@@ -112,8 +113,8 @@ const themeText = computed(() => isDark.value ? 'Modo claro' : 'Modo oscuro')
 /* Luna */
 .moon-icon {
   font-size: 24px;
-  color: #f1c40f;
-  filter: drop-shadow(0 0 5px #f1c40f);
+  color: #2DD4BF;
+  filter: drop-shadow(0 0 6px rgba(45, 212, 191, 0.5));
 }
 
 .stars {
@@ -178,11 +179,11 @@ const themeText = computed(() => isDark.value ? 'Modo claro' : 'Modo oscuro')
 /* Hover */
 .theme-toggle-btn:hover {
   transform: scale(1.1);
-  box-shadow: 0 5px 15px rgba(233, 69, 96, 0.3);
+  box-shadow: 0 5px 18px rgba(13, 148, 136, 0.35);
 }
 
 [data-bs-theme="dark"] .theme-toggle-btn:hover {
-  box-shadow: 0 5px 15px rgba(255, 107, 139, 0.4);
+  box-shadow: 0 5px 18px rgba(45, 212, 191, 0.4);
 }
 
 /* Responsive */

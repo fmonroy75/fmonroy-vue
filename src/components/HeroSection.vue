@@ -68,7 +68,7 @@
           <div class="col-lg-5 d-none d-lg-block">
             <div class="position-relative animate-float">
               <div class="position-absolute top-50 start-50 translate-middle" 
-                   style="width: 450px; height: 450px; background: radial-gradient(circle, rgba(233,69,96,0.2) 0%, transparent 70%);">
+                   style="width: 450px; height: 450px; background: radial-gradient(circle, rgba(13,148,136,0.2) 0%, transparent 70%);">
               </div>
               
               <div class="position-relative text-center">
@@ -145,37 +145,37 @@
   }
   
   .bg-gradient-accent {
-    background: linear-gradient(135deg, #E94560 0%, #d63a52 100%);
+    background: linear-gradient(135deg, var(--bs-accent) 0%, var(--bs-accent-hover) 100%);
   }
   
   [data-bs-theme="dark"] .bg-gradient-accent {
-    background: linear-gradient(135deg, #FF6B8B 0%, #FF8E9F 100%) !important;
+    background: linear-gradient(135deg, #2DD4BF 0%, #14B8A6 100%) !important;
   }
   
   .bg-accent {
-    background-color: #E94560 !important;
+    background-color: var(--bs-accent) !important;
   }
   
   [data-bs-theme="dark"] .bg-accent {
-    background-color: #FF6B8B !important;
+    background-color: #2DD4BF !important;
   }
   
   .text-accent-light {
-    color: #E94560 !important;
+    color: var(--bs-accent) !important;
   }
   
   [data-bs-theme="dark"] .text-accent-light {
-    color: #FF6B8B !important;
+    color: #2DD4BF !important;
   }
   
   .btn-accent {
-    background: linear-gradient(135deg, #E94560 0%, #d63a52 100%);
+    background: linear-gradient(135deg, var(--bs-accent) 0%, var(--bs-accent-hover) 100%);
     border: none;
     color: white;
   }
   
   [data-bs-theme="dark"] .btn-accent {
-    background: linear-gradient(135deg, #FF6B8B 0%, #FF8E9F 100%) !important;
+    background: linear-gradient(135deg, #2DD4BF 0%, #14B8A6 100%) !important;
   }
   
   .btn-outline-light {
@@ -185,7 +185,7 @@
   
   .btn-outline-light:hover {
     background: white;
-    color: #2C3E50;
+    color: var(--text-primary);
   }
   
   [data-bs-theme="dark"] .btn-outline-light:hover {

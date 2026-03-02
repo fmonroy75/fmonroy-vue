@@ -123,21 +123,22 @@
   import { education, courses, languages } from '../data/portfolioData'
   
   const sortedCourses = computed(() => {
-    return [...courses].sort((a, b) => b.year - a.year)
+    //return [...courses].sort((a, b) => b.year - a.year)
+    return [...courses].sort((a, b) => b.id - a.id) // Descendente por ID
   })
   </script>
   
   <style scoped>
   .bg-gradient-accent {
-    background: linear-gradient(135deg, #E94560 0%, #d63a52 100%);
+    background: linear-gradient(135deg, var(--bs-accent) 0%, var(--bs-accent-hover) 100%);
   }
   
   .bg-accent {
-    background-color: #E94560 !important;
+    background-color: var(--bs-accent) !important;
   }
   
   .text-accent {
-    color: #E94560 !important;
+    color: var(--bs-accent) !important;
   }
   
   .bg-opacity-10 {
@@ -156,7 +157,7 @@
     top: 8px;
     bottom: 8px;
     width: 2px;
-    background: linear-gradient(to bottom, #E94560, #3498DB);
+    background: linear-gradient(to bottom, var(--bs-accent), var(--bs-secondary));
   }
   
   .timeline-dot {
@@ -166,9 +167,9 @@
     width: 14px;
     height: 14px;
     border-radius: 50%;
-    background: #E94560;
+    background: var(--bs-accent);
     border: 3px solid white;
-    box-shadow: 0 0 0 2px rgba(233, 69, 96, 0.3);
+    box-shadow: 0 0 0 2px rgba(13, 148, 136, 0.3);
   }
   
   .card-premium {
