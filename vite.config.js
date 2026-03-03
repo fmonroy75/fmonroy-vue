@@ -12,7 +12,7 @@ import vue from '@vitejs/plugin-vue'
 
 export default defineConfig({
   plugins: [vue()],
-  base: '/vue-premium-portfolio/', // Cambia al nombre de tu repositorio
+  base: '/fmonroy-vue/', // Cambia al nombre de tu repositorio
   build: {
     outDir: 'dist',
     assetsDir: 'assets',

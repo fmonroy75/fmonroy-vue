@@ -10,7 +10,7 @@ export const personalInfo = {
   fullBio: 'Ingeniero de Gestión y Sistemas con experiencia en evaluación, gestión, administración e implementación de proyectos tecnológicos y operativos, supervisión de servicios externos, auditoría de procesos, mejora de procesos, análisis de datos, administración de proveedores, administración de presupuesto. Liderazgo, capacidad analítica y orientación al logro. Excelentes habilidades de comunicación, resolución de problemas y gestión de relaciones.',
   location: 'Santiago de Chile',
   email: 'francisco.monroy@gmail.com',
-  linkedin: 'https://www.linkedin.com/in/fmonroy75/',
+  linkedin: 'https://www.linkedin.com/in/francisco-monroy-314b5337/',
   github: 'https://github.com/fmonroy75',
   whatsappNumber: '56982307788',
   whatsappMessage:'Hola%20Francisco,%20vi%20tu%20portafolio%20y%20me%20gustaría%20conversar%20contigo',
