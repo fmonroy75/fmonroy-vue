@@ -668,6 +668,28 @@ export const projects = [
     featured: true,
     year: 2026
      
+  },
+  {
+    id: 8,
+    title: 'Simulador Bursatil',
+    category: 'web',
+    categoryLabel: 'Desarrollo Web',
+    description: 'Simulador bursatil',
+    fullDescription: 'Simulador de compra y ventas de acciones, con una seccion para noticias',
+    image: '../src/assets/images/portfolio/talentodigital.png',
+    technologies: ['Bootstrap', 'Javascript', 'Vue','Firebase'],
+    features: [
+      'Autentificacion',
+      'APIs',
+      'Compra/venta acciones',
+      'Blog de Noticias',
+    ],
+    demoUrl: '',
+    codeUrl: '',
+    webUrl:'https://fmonroy75.github.io/simulador-bursatil/',
+    featured: true,
+    year: 2026
+     
   }
 
 ]
