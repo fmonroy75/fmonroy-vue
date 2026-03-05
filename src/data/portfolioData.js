@@ -657,7 +657,7 @@ export const projects = [
     category: 'web',
     categoryLabel: 'Desarrollo Web',
     description: 'Landing Page tienda de respuestos y accesorios para celulares',
-    fullDescription: 'Sitio web de tienda de repuestos y accesorios para celulares, cada card con acción de llamada a whatsapp',
+    fullDescription: 'Landing Page para tienda de repuestos móviles con integración de contacto directo a WhatsApp para generación de leads.',
     image: 'img/portfolio/moviltechnology.jpg',
     technologies: ['Bootstrap', 'Javascript', 'Vue'],
     features: [
