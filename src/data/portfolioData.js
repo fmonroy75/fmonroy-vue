@@ -656,7 +656,7 @@ export const projects = [
     categoryLabel: 'Desarrollo Web',
     description: 'Landing Page tienda de respuestos y accesorios para celulares',
     fullDescription: 'Sitio web de tienda de repuestos y accesorios para celulares, cada card con acción de llamada a whatsapp',
-    image: 'portfolio/moviltechnology.jpg',
+    image: 'img/portfolio/moviltechnology.jpg',
     technologies: ['Bootstrap', 'Javascript', 'Vue'],
     features: [
       'Cards con llamada a la acción',
@@ -676,7 +676,7 @@ export const projects = [
     categoryLabel: 'Desarrollo Web',
     description: 'Simulador bursatil',
     fullDescription: 'Simulador de compra y ventas de acciones, con una seccion para noticias',
-    image: '/img/portfolio/talentodigital.png',
+    image: 'img/portfolio/talentodigital.png',
     technologies: ['Bootstrap', 'Javascript', 'Vue','Firebase'],
     features: [
       'Autentificacion',
