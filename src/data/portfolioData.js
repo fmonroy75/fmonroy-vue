@@ -498,6 +498,7 @@ export const languages = [
   { name: 'Francés', level: 3.5, native: 'Intermedio', flag: 'bi-flag' }
 ]
 
+
 export const projects = [
 
   {
@@ -695,6 +696,7 @@ export const projects = [
   }
 
 ]
+
 
 export const menuItems = [
   { name: 'Inicio', path: '#home' },

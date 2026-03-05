@@ -19,7 +19,7 @@
                 <i class="bi bi-code-slash me-2"></i>FULL STACK DEVELOPER
               </span>
               
-              <h1 class="display-1 fw-bold mb-3">
+              <h1 class="display-1 fw-bold p-3 mb-3">
                 Francisco <span class="text-accent-light">Monroy</span> H.
               </h1>
               
