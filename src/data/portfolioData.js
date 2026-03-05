@@ -168,6 +168,7 @@ export const experience = [
 export const education = [
   {
     id: 1,
+    image:'img/empresas/udla.webp',
     degree: 'Ingeniería Civil Industrial',
     institution: 'Universidad de Las Américas',
     location: 'Santiago de Chile',
@@ -176,6 +177,7 @@ export const education = [
   },
   {
     id: 2,
+    image:'img/empresas/Logo_CIISA.webp',
     degree: 'Ingeniería en Ejecución en Informática',
     institution: 'Instituto CIISA',
     location: 'Santiago de Chile',
@@ -392,13 +394,13 @@ export const tools = [
     experience: '1+ años',
     description: 'Testing'
   },
-  { 
+  /*{ 
     name: 'Wix', 
     level: 85, 
     icon: 'wix.png',
     experience: '5+ años',
     description: 'Desarrollo Web'
-  },
+  },*/
   { 
     name: 'Wordpress', 
     level: 85, 
@@ -505,7 +507,7 @@ export const projects = [
     categoryLabel: 'Python',
     description: 'Proyecto test en Python, simulador de corredor de bolsa.',
     fullDescription: 'Aplicación de simulación de inversiones en tiempo real que permite a usuarios compra y venta de acciones.',
-    image: '/img/portfolio/python-bootcamp.webp',
+    image: 'img/portfolio/python-bootcamp.webp',
     technologies: ['Python', 'Bootstrap', 'Django'],
     features: [
       'Simulación de compra/venta de acciones',
@@ -525,7 +527,7 @@ export const projects = [
     categoryLabel: 'Python',
     description: 'Sistema de administración de arriendo de bodegas.',
     fullDescription: 'Sistema de gestión para arriendo de bodegas. Control de inventario,reportes financieros y dashboard administrativo.',
-    image: '/img/portfolio/python-bootcamp.webp',
+    image: 'img/portfolio/python-bootcamp.webp',
     technologies: ['Python', 'Django', 'SQLite', 'Bootstrap'],
     features: [
       'Gestión de clientes ',
@@ -569,7 +571,7 @@ export const projects = [
     categoryLabel: 'Desarrollo Web',
     description: 'Landing Page para fitness Terapias Funcionales - Chikung.',
     fullDescription: 'Landing page profesional para centro de terapias funcionales. Diseño responsive con animaciones suaves y optimización SEO.',
-    image: '/img/portfolio/tf.jpg',
+    image: 'img/portfolio/tf.jpg',
     technologies: ['HTML5', 'CSS3', 'JavaScript', 'BEM', 'Tailwind'],
     features: [
       'Diseño 100% responsive',
@@ -592,7 +594,7 @@ export const projects = [
     categoryLabel: 'Desarrollo Web',
     description: 'Webpage para una academia de idiomas con galería de arte.',
     fullDescription: 'Webpage para una academia de idiomas, galería de arte, exposiciones y eventos',
-    image: '/img/portfolio/languageartlife.jpg',
+    image: 'img/portfolio/languageartlife.jpg',
     technologies: ['Bootstrap','Javascript','PHP','MySQL','Javascript','Json','Jquery'],
     features:[ 
       'Blog de noticias y eventos',
@@ -614,7 +616,7 @@ export const projects = [
     categoryLabel: 'Desarrollo Web',
     description: 'Juegos para practicar oralmente, idiomas, supervisados o sin supervisar con algun profesor.',
     fullDescription: 'Plataforma interactiva de juegos educativos para la práctica oral de idiomas.',
-    image: '/img/portfolio/languagelife.jpg',
+    image: 'img/portfolio/languagelife.jpg',
     technologies: ['PHP', 'MySQL'],
     features: [
       'PHP',
@@ -636,7 +638,7 @@ export const projects = [
     categoryLabel: 'Desarrollo Web',
     description: 'Landing Page para músico Vincent Alizé - Portafolio artístico.',
     fullDescription: 'Sitio web portfolio para músico profesional. Galería de videos, discografía',
-    image: '/img/portfolio/vincentalize.jpg',
+    image: 'img/portfolio/vincentalize.jpg',
     technologies: ['Bootstrap', 'Javascript', 'jQuery'],
     features: [
       'Galería multimedia',
