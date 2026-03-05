@@ -16,6 +16,7 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
+    publicPath: '/fmonroy-vue/',
     rollupOptions: {
       output: {
         manualChunks: {
