@@ -25,7 +25,7 @@
                  style="width: 45px; height: 45px;">
                 <i class="bi bi-envelope fs-5"></i>
               </a>
-              <a :href="personalInfo.cvFile" download
+              <a :href="personalInfo.cvFile" download="Francisco_Monroy_CV.pdf"
                  class="btn btn-outline-light rounded-circle p-3 d-flex align-items-center justify-content-center"
                  style="width: 45px; height: 45px;">
                 <i class="bi bi-file-text fs-5"></i>
@@ -89,7 +89,7 @@
   
   <script setup>
   import { ref } from 'vue'
-  import { personalInfo, menuItems } from '../data/portfolioData'
+  import { personalInfo, menuItems } from '../data/portfolioData' 
   
   const currentYear = ref(new Date().getFullYear())
   </script>

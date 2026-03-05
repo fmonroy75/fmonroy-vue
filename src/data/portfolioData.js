@@ -505,7 +505,7 @@ export const projects = [
     categoryLabel: 'Python',
     description: 'Proyecto test en Python, simulador de corredor de bolsa.',
     fullDescription: 'Aplicación de simulación de inversiones en tiempo real que permite a usuarios compra y venta de acciones.',
-    image: '../src/assets/images/portfolio/python-bootcamp.webp',
+    image: '/img/portfolio/python-bootcamp.webp',
     technologies: ['Python', 'Bootstrap', 'Django'],
     features: [
       'Simulación de compra/venta de acciones',
@@ -525,7 +525,7 @@ export const projects = [
     categoryLabel: 'Python',
     description: 'Sistema de administración de arriendo de bodegas.',
     fullDescription: 'Sistema de gestión para arriendo de bodegas. Control de inventario,reportes financieros y dashboard administrativo.',
-    image: '../src/assets/images/portfolio/python-bootcamp.webp',
+    image: '/img/portfolio/python-bootcamp.webp',
     technologies: ['Python', 'Django', 'SQLite', 'Bootstrap'],
     features: [
       'Gestión de clientes ',
@@ -546,7 +546,7 @@ export const projects = [
     categoryLabel: 'Python',
     description: 'Proyecto final de gestión inmobiliaria, permite mostrar propiedades y agregar cuando se requiera.',
     fullDescription: 'Sistema completo para la gestión de propiedades inmobiliarias. Incluye módulos de administración de propiedades, clientes, reportes y dashboard interactivo desarrollado Python y Django.',
-    image: '../src/assets/images/portfolio/python-bootcamp.webp',
+    image: '/img/portfolio/python-bootcamp.webp',
     technologies: ['Python', 'Django', 'PostgreSQL', 'Bootstrap'],
     features: [
       'CRUD completo de propiedades',
@@ -569,7 +569,7 @@ export const projects = [
     categoryLabel: 'Desarrollo Web',
     description: 'Landing Page para fitness Terapias Funcionales - Chikung.',
     fullDescription: 'Landing page profesional para centro de terapias funcionales. Diseño responsive con animaciones suaves y optimización SEO.',
-    image: '../src/assets/images/portfolio/tf.jpg',
+    image: '/img/portfolio/tf.jpg',
     technologies: ['HTML5', 'CSS3', 'JavaScript', 'BEM', 'Tailwind'],
     features: [
       'Diseño 100% responsive',
@@ -592,7 +592,7 @@ export const projects = [
     categoryLabel: 'Desarrollo Web',
     description: 'Webpage para una academia de idiomas con galería de arte.',
     fullDescription: 'Webpage para una academia de idiomas, galería de arte, exposiciones y eventos',
-    image: '../src/assets/images/portfolio/languageartlife.jpg',
+    image: '/img/portfolio/languageartlife.jpg',
     technologies: ['Bootstrap','Javascript','PHP','MySQL','Javascript','Json','Jquery'],
     features:[ 
       'Blog de noticias y eventos',
@@ -614,7 +614,7 @@ export const projects = [
     categoryLabel: 'Desarrollo Web',
     description: 'Juegos para practicar oralmente, idiomas, supervisados o sin supervisar con algun profesor.',
     fullDescription: 'Plataforma interactiva de juegos educativos para la práctica oral de idiomas.',
-    image: '../src/assets/images/portfolio/languagelife.jpg',
+    image: '/img/portfolio/languagelife.jpg',
     technologies: ['PHP', 'MySQL'],
     features: [
       'PHP',
@@ -636,7 +636,7 @@ export const projects = [
     categoryLabel: 'Desarrollo Web',
     description: 'Landing Page para músico Vincent Alizé - Portafolio artístico.',
     fullDescription: 'Sitio web portfolio para músico profesional. Galería de videos, discografía',
-    image: '../src/assets/images/portfolio/vincentalize.jpg',
+    image: '/img/portfolio/vincentalize.jpg',
     technologies: ['Bootstrap', 'Javascript', 'jQuery'],
     features: [
       'Galería multimedia',
@@ -656,7 +656,7 @@ export const projects = [
     categoryLabel: 'Desarrollo Web',
     description: 'Landing Page tienda de respuestos y accesorios para celulares',
     fullDescription: 'Sitio web de tienda de repuestos y accesorios para celulares, cada card con acción de llamada a whatsapp',
-    image: '../src/assets/images/portfolio/moviltechnology.jpg',
+    image: '/img/portfolio/moviltechnology.jpg',
     technologies: ['Bootstrap', 'Javascript', 'Vue'],
     features: [
       'Cards con llamada a la acción',
@@ -676,7 +676,7 @@ export const projects = [
     categoryLabel: 'Desarrollo Web',
     description: 'Simulador bursatil',
     fullDescription: 'Simulador de compra y ventas de acciones, con una seccion para noticias',
-    image: '../src/assets/images/portfolio/talentodigital.png',
+    image: '/img/portfolio/talentodigital.png',
     technologies: ['Bootstrap', 'Javascript', 'Vue','Firebase'],
     features: [
       'Autentificacion',
@@ -686,7 +686,7 @@ export const projects = [
     ],
     demoUrl: '',
     codeUrl: '',
-    webUrl:'https://fmonroy75.github.io/simulador-bursatil/',
+    webUrl:'https://fmonroy75.github.io/m7-bursatil-vue/',
     featured: true,
     year: 2026
      
@@ -699,7 +699,7 @@ export const menuItems = [
   { name: 'Experiencia', path: '#experience' },
   { name: 'Educación', path: '#education' },
   { name: 'Habilidades', path: '#skills' },
-  { name: 'Proyectos', path: '#portfolio' },
-  { name: 'Contacto', path: '#contact' }
+  { name: 'Proyectos', path: '#portfolio' }
+
 ]
 
