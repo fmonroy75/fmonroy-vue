@@ -546,7 +546,7 @@ export const projects = [
     categoryLabel: 'Python',
     description: 'Proyecto final de gestión inmobiliaria, permite mostrar propiedades y agregar cuando se requiera.',
     fullDescription: 'Sistema completo para la gestión de propiedades inmobiliarias. Incluye módulos de administración de propiedades, clientes, reportes y dashboard interactivo desarrollado Python y Django.',
-    image: '/img/portfolio/python-bootcamp.webp',
+    image: 'img/portfolio/python-bootcamp.webp',
     technologies: ['Python', 'Django', 'PostgreSQL', 'Bootstrap'],
     features: [
       'CRUD completo de propiedades',
