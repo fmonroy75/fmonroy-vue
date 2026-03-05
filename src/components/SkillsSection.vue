@@ -13,158 +13,9 @@
           Más de 25 tecnologías dominadas a lo largo de 15+ años de experiencia continua
         </p>
       </div>
-
-      <!-- ===== LENGUAJES DE PROGRAMACIÓN (NUEVO) ===== -->
-<!--      <div class="mb-5" data-aos="fade-up">
-        <div class="d-flex align-items-center mb-4">
-          <div class="bg-gradient-accent rounded-circle p-3 me-3">
-            <i class="bi bi-code-slash text-white fs-3"></i>
-          </div>
-          <h3 class="h3 fw-bold mb-0 text-primary">Lenguajes de Programación</h3>
-        </div>
-        
-        <div class="row g-4">
-          <div v-for="lang in programmingLanguages" :key="lang.name" 
-               class="col-lg-3 col-md-4 col-sm-6">
-            <div class="skill-card card h-100 border-0 shadow-sm hover-lift">
-              <div class="card-body text-center p-4">
-                <!- - Imagen del lenguaje - ->
-                <div class="mb-3">
-                  <img :src="getSkillImage(lang.icon)" 
-                       :alt="lang.name"
-                       class="skill-icon img-fluid"
-                       style="height: 60px; width: auto; object-fit: contain;"
-                       @error="handleImageError">
-                </div>
-                
-                <h4 class="h5 fw-bold text-primary mb-2">{{ lang.name }}</h4>
-                
-                <!- - Nivel de experiencia - ->
-                <div class="mb-3">
-                  <div class="progress" style="height: 8px;">
-                    <div class="progress-bar" role="progressbar" 
-                         :style="{ width: lang.level + '%' }"
-                         :aria-valuenow="lang.level" aria-valuemin="0" aria-valuemax="100">
-                    </div>
-                  </div>
-                  <span class="small text-accent mt-1 d-block">{{ lang.level }}%</span>
-                </div>
-                
-                <!- - Años de experiencia - ->
-                <div class="d-flex align-items-center justify-content-center gap-2 mb-2">
-                  <i class="bi bi-clock-history text-accent"></i>
-                  <span class="small fw-semibold">{{ lang.experience }}</span>
-                </div>
-                
-                <! -- Descripción (tooltip o visible solo en hover) - ->
-                <div class="skill-description small text-secondary">
-                  {{ lang.description }}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    -->
-      <!-- ===== FRAMEWORKS Y LIBRERÍAS ===== - ->
-      <div class="mb-5" data-aos="fade-up">
-        <div class="d-flex align-items-center mb-4">
-          <div class="bg-gradient-accent rounded-circle p-3 me-3">
-            <i class="bi bi-boxes text-white fs-3"></i>
-          </div>
-          <h3 class="h3 fw-bold mb-0 text-primary">Frameworks y Librerías</h3>
-        </div>
-        
-        <div class="row g-4">
-          <div v-for="fw in frameworks" :key="fw.name" 
-               class="col-lg-3 col-md-4 col-sm-6">
-            <div class="skill-card card h-100 border-0 shadow-sm hover-lift">
-              <div class="card-body text-center p-4">
-                <div class="mb-3">
-                  <img :src="getSkillImage(fw.icon)" 
-                       :alt="fw.name"
-                       class="skill-icon img-fluid"
-                       style="height: 60px; width: auto; object-fit: contain;"
-                       @error="handleImageError">
-                </div>
-                
-                <h4 class="h5 fw-bold text-primary mb-2">{{ fw.name }}</h4>
-                
-                <div class="mb-3">
-                  <div class="progress" style="height: 8px;">
-                    <div class="progress-bar" role="progressbar" 
-                         :style="{ width: fw.level + '%' }"
-                         :aria-valuenow="fw.level" aria-valuemin="0" aria-valuemax="100">
-                    </div>
-                  </div>
-                  <span class="small text-accent mt-1 d-block">{{ fw.level }}%</span>
-                </div>
-                
-                <div class="d-flex align-items-center justify-content-center gap-2 mb-2">
-                  <i class="bi bi-clock-history text-accent"></i>
-                  <span class="small fw-semibold">{{ fw.experience }}</span>
-                </div>
-                
-                <div class="skill-description small text-secondary">
-                  {{ fw.description }}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!- - ===== HERRAMIENTAS Y OTROS ===== - ->
-      <div class="mb-5" data-aos="fade-up">
-        <div class="d-flex align-items-center mb-4">
-          <div class="bg-gradient-accent rounded-circle p-3 me-3">
-            <i class="bi bi-tools text-white fs-3"></i>
-          </div>
-          <h3 class="h3 fw-bold mb-0 text-primary">Herramientas y Tecnologías</h3>
-        </div>
-        
-        <div class="row g-4">
-          <div v-for="tool in tools" :key="tool.name" 
-               class="col-lg-3 col-md-4 col-sm-6">
-            <div class="skill-card card h-100 border-0 shadow-sm hover-lift">
-              <div class="card-body text-center p-4">
-                <div class="mb-3">
-                  <img :src="getSkillImage(tool.icon)" 
-                       :alt="tool.name"
-                       class="skill-icon img-fluid"
-                       style="height: 60px; width: auto; object-fit: contain;"
-                       @error="handleImageError">
-                </div>
-                
-                <h4 class="h5 fw-bold text-primary mb-2">{{ tool.name }}</h4>
-                
-                <div class="mb-3">
-                  <div class="progress" style="height: 8px;">
-                    <div class="progress-bar" role="progressbar" 
-                         :style="{ width: tool.level + '%' }"
-                         :aria-valuenow="tool.level" aria-valuemin="0" aria-valuemax="100">
-                    </div>
-                  </div>
-                  <span class="small text-accent mt-1 d-block">{{ tool.level }}%</span>
-                </div>
-                
-                <div class="d-flex align-items-center justify-content-center gap-2 mb-2">
-                  <i class="bi bi-clock-history text-accent"></i>
-                  <span class="small fw-semibold">{{ tool.experience }}</span>
-                </div>
-                
-                <div class="skill-description small text-secondary">
-                  {{ tool.description }}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    -->
-      <!-- ===== HABILIDADES TÉCNICAS GENERALES (BARRAS) ===== -->
+      <!-- ===== HABILIDADES TÉCNICAS GENERALES (BARRAS) ===== -- >
       <div class="row g-4 mt-4">
-        <!-- Skills técnicas -->
+        <!- - Skills técnicas -- >
         <div class="col-lg-7">
           <div class="card card-premium h-100" data-aos="fade-right">
             <div class="card-body p-4 p-lg-5">
@@ -194,7 +45,7 @@
           </div>
         </div>
         
-        <!-- Especializaciones -->
+        <!- - Especializaciones - ->
         <div class="col-lg-5">
           <div class="card card-premium h-100" data-aos="fade-left">
             <div class="card-body p-4 p-lg-5">
@@ -218,7 +69,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div>-->
       
       <!-- Bases de Datos y ERP -->
       <div class="row mt-4">
@@ -229,7 +80,7 @@
                 <div class="bg-gradient-accent rounded-circle p-3 me-3">
                   <i class="bi bi-database text-white fs-3"></i>
                 </div>
-                <h3 class="h3 fw-bold mb-0 text-primary">Bases de Datos y ERP</h3>
+                <h3 class="h3 fw-bold mb-0 text-primary">Motores de Bases de Datos y ERP</h3>
               </div>
               
               <div class="d-flex flex-wrap gap-2">
