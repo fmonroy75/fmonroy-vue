@@ -673,7 +673,7 @@ export const projects = [
      
   },
   {
-    id: 8,
+    id: 9,
     title: 'Simulador Bursatil',
     category: 'web',
     categoryLabel: 'Desarrollo Web',
